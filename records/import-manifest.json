@@ -1,0 +1,776 @@
+{
+  "imported_on": "2026-11-17",
+  "source_repository": "https://github.com/kapiltrip/Verilog-Maven-Silicon",
+  "history": "Fresh public repository; no private Git history imported",
+  "copy_method": "Byte-for-byte copies; SHA-256 verified",
+  "files": [
+    {
+      "path": "Topic01/rtl/bidirectionalBuffer.v",
+      "source_path": "Labs Verilog/Lab1/rtl/bidirectionalBuffer.v",
+      "kind": "rtl",
+      "sha256": "bd46a5fbd129104e4eef51ef6f34929ce4455ad33177d81d2fff2089fdf85944"
+    },
+    {
+      "path": "Topic01/rtl/decoderDataflow.v",
+      "source_path": "Labs Verilog/Lab1/rtl/decoderDataflow.v",
+      "kind": "rtl",
+      "sha256": "898aef9ba51ebd2b0511184529a291d4371eb3583d49ca7b6b0467a2f603a324"
+    },
+    {
+      "path": "Topic01/rtl/fullAdderDataflow.v",
+      "source_path": "Labs Verilog/Lab1/rtl/fullAdderDataflow.v",
+      "kind": "rtl",
+      "sha256": "9f5f25f503c1b9ef48789ed0e095745369ce7d419bbc833d7c0d5997a3be11d4"
+    },
+    {
+      "path": "Topic01/rtl/mux4to1.v",
+      "source_path": "Labs Verilog/Lab1/rtl/mux4to1.v",
+      "kind": "rtl",
+      "sha256": "fc32e9dd397e6c9a11eaaf46df6ae64c523d5f9b50f508dfde8c96afc8933ffc"
+    },
+    {
+      "path": "Topic01/rtl/muxUsingDecoder.v",
+      "source_path": "Labs Verilog/Lab1/rtl/muxUsingDecoder.v",
+      "kind": "rtl",
+      "sha256": "8695d92e76cbf16e163e0336cfd1a7f0a90036628e2448d6b6b1168d25e3606f"
+    },
+    {
+      "path": "Topic01/rtl/rippleCarryAdder.v",
+      "source_path": "Labs Verilog/Lab1/rtl/rippleCarryAdder.v",
+      "kind": "rtl",
+      "sha256": "f86f0b764fa06d6502a2bb0ccd2022b36688b9a18c4342d08d93e719fdc6fa13"
+    },
+    {
+      "path": "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v",
+      "source_path": "Labs Verilog/Lab1/rtl/rtlExtra/fullAdderUsingHalfAdder.v",
+      "kind": "rtl",
+      "sha256": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb"
+    },
+    {
+      "path": "Topic01/rtl/rtlExtra/halfAdder.v",
+      "source_path": "Labs Verilog/Lab1/rtl/rtlExtra/halfAdder.v",
+      "kind": "rtl",
+      "sha256": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067"
+    },
+    {
+      "path": "Topic01/rtl/rtlExtra/priorityEncoder.v",
+      "source_path": "Labs Verilog/Lab1/rtl/rtlExtra/priorityEncoder.v",
+      "kind": "rtl",
+      "sha256": "def6c95c0620c652fd07e650c1da6618c58548522851f04c57ce50edb75c4754"
+    },
+    {
+      "path": "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v",
+      "source_path": "Labs Verilog/Lab1/rtl/rtlExtra/rippleCarryAdderStruct.v",
+      "kind": "rtl",
+      "sha256": "6c4a2e2c3e9dde06eba18c5c86db081a4e8e1a508584071a9888cd42d74d383b"
+    },
+    {
+      "path": "Topic01/tb/bidirectionalBuffer_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/bidirectionalBuffer_tb.v",
+      "kind": "tb",
+      "sha256": "99d9a1cd05419eeaca30ed0282ed4ac689d5234952be36ebb1a0af55b9114864"
+    },
+    {
+      "path": "Topic01/tb/decoderDataflow_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/decoderDataflow_tb.v",
+      "kind": "tb",
+      "sha256": "7e2bdfb3f9af624e920ff00344b401bb21006d67404e567c391812647cd07cd3"
+    },
+    {
+      "path": "Topic01/tb/fullAdderDataflow_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/fullAdderDataflow_tb.v",
+      "kind": "tb",
+      "sha256": "9f9a70a92aa0b4da74e8db559bb5bffe02f117836662552089fffb2a04bb0a98"
+    },
+    {
+      "path": "Topic01/tb/fullAdderUsingHalfAdder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/fullAdderUsingHalfAdder_tb.v",
+      "kind": "tb",
+      "sha256": "1e52f399c171cd259f76643baec028d169c2ab030ae6588cc7b497ecd9f77530"
+    },
+    {
+      "path": "Topic01/tb/halfAdder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/halfAdder_tb.v",
+      "kind": "tb",
+      "sha256": "bff65848a920c9929a7bb810a702b7d664700b98683615d128a6a4ab9cc8165b"
+    },
+    {
+      "path": "Topic01/tb/mux4to1_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/mux4to1_tb.v",
+      "kind": "tb",
+      "sha256": "5706e80550fdb3c247334cc3b45b14765a6f762349f18cc31ab429ee3a9fb649"
+    },
+    {
+      "path": "Topic01/tb/muxUsingdecoder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/muxUsingdecoder_tb.v",
+      "kind": "tb",
+      "sha256": "8f15ac6ceb34316fe6723e90945275e5fe981da48c9b7ec7a323cda91f914426"
+    },
+    {
+      "path": "Topic01/tb/rippleCarryAdder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/rippleCarryAdder_tb.v",
+      "kind": "tb",
+      "sha256": "17b21e8178530925402790d213d458a683b24a0b8900f3c4b6f1416a8af7aa7d"
+    },
+    {
+      "path": "Topic01/tb/tbExtra/fullAdderUsingHalfAdder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/tbExtra/fullAdderUsingHalfAdder_tb.v",
+      "kind": "tb",
+      "sha256": "1b0e242c5e352122c227e1c6efd51155e15f138f3698cdf7411652464079132d"
+    },
+    {
+      "path": "Topic01/tb/tbExtra/halfAdder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/tbExtra/halfAdder_tb.v",
+      "kind": "tb",
+      "sha256": "6768112d11b4e32fddeee95f36fd7b9c784704a26f01e0b8183391709ec61fb5"
+    },
+    {
+      "path": "Topic01/tb/tbExtra/priorityEncoder_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/tbExtra/priorityEncoder_tb.v",
+      "kind": "tb",
+      "sha256": "3b36a4a2af87dddb497bbf0205e5429d7f40627695ef7f7b0ba4376755081d8b"
+    },
+    {
+      "path": "Topic01/tb/tbExtra/ripplyCarryAdderStruct.v",
+      "source_path": "Labs Verilog/Lab1/tb/tbExtra/ripplyCarryAdderStruct.v",
+      "kind": "tb",
+      "sha256": "d2254f0e5b43860b7614c7ec6564f806027533bb31577b45cd974b590ad25c63"
+    },
+    {
+      "path": "Topic01/tb/tbExtra/ripplyCarryAdderStruct_tb.v",
+      "source_path": "Labs Verilog/Lab1/tb/tbExtra/ripplyCarryAdderStruct_tb.v",
+      "kind": "tb",
+      "sha256": "c4472e9c86d89e0a5e8aca328b46806b2d576db61ac136ab9e6b25a6202404d5"
+    },
+    {
+      "path": "Topic03/rtl/decoder3_8.v",
+      "source_path": "Labs Verilog/Lab3/rtl/decoder3_8.v",
+      "kind": "rtl",
+      "sha256": "e9173b7d9c80d8b00c2de0cc2a93292799b940bb63cde13927fe47fe4d08adc4"
+    },
+    {
+      "path": "Topic03/rtl/encoderPriority.v",
+      "source_path": "Labs Verilog/Lab3/rtl/encoderPriority.v",
+      "kind": "rtl",
+      "sha256": "3ab5a5d94e15d1051b81dbfcb0f796529c1dbc6d01906c32bc35f9b11371bab8"
+    },
+    {
+      "path": "Topic03/tb/decoder3_8_tb.v",
+      "source_path": "Labs Verilog/Lab3/tb/decoder3_8_tb.v",
+      "kind": "tb",
+      "sha256": "4d6af29013b5eae94744248d89939fc3a3c8ffb124e05bc3724f2a6c98bbbbb0"
+    },
+    {
+      "path": "Topic03/tb/encoderPriority_tb.v",
+      "source_path": "Labs Verilog/Lab3/tb/encoderPriority_tb.v",
+      "kind": "tb",
+      "sha256": "5cddda752e8646e7b7131e03c6b867a6f56696738162bb5d20c2736e2bd2033f"
+    },
+    {
+      "path": "Topic04/rtl/binaryUpDownCounter.v",
+      "source_path": "Labs Verilog/Lab4/rtl/binaryUpDownCounter.v",
+      "kind": "rtl",
+      "sha256": "74121ddf8738310e88e0c3693c0bc2879e26767878f7e2cb1a5d51379aa68cbf"
+    },
+    {
+      "path": "Topic04/rtl/jkFlipFlopParameter.v",
+      "source_path": "Labs Verilog/Lab4/rtl/jkFlipFlopParameter.v",
+      "kind": "rtl",
+      "sha256": "45a2531947f69eeb1747beea79d3959348b8bc168de9bc1738c37cdcb648f6eb"
+    },
+    {
+      "path": "Topic04/rtl/latchSR.v",
+      "source_path": "Labs Verilog/Lab4/rtl/latchSR.v",
+      "kind": "rtl",
+      "sha256": "5dd2381b1df8ea37c54f51884ade0470d8158a8e49cc42303196ffc9adfdff0d"
+    },
+    {
+      "path": "Topic04/rtl/loadableUpCounter.v",
+      "source_path": "Labs Verilog/Lab4/rtl/loadableUpCounter.v",
+      "kind": "rtl",
+      "sha256": "848fd7a4ba9a315560b55d24edab46218bbd190d6625e6e76fb544b7df0c2819"
+    },
+    {
+      "path": "Topic04/rtl/mod12UpCounter.v",
+      "source_path": "Labs Verilog/Lab4/rtl/mod12UpCounter.v",
+      "kind": "rtl",
+      "sha256": "c9cb86d004e0683fbc68d2bf5fc462ffd2e0a319d9cc0a1838eb3f94504ffdde"
+    },
+    {
+      "path": "Topic04/rtl/siso.v",
+      "source_path": "Labs Verilog/Lab4/rtl/siso.v",
+      "kind": "rtl",
+      "sha256": "1a37b28cbca903d111aea95fd266c0cbc10ab021c923d24a62b13006ac68efa1"
+    },
+    {
+      "path": "Topic04/rtl/tUsingDff.v",
+      "source_path": "Labs Verilog/Lab4/rtl/tUsingDff.v",
+      "kind": "rtl",
+      "sha256": "d820bba648c2be2f2da1aae8a618a70f152964aa17400eccee61196bfc430d30"
+    },
+    {
+      "path": "Topic04/tb/binaryUpDownCounter_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/binaryUpDownCounter_tb.v",
+      "kind": "tb",
+      "sha256": "ef4d0c9b9a1d7acdc5ef705a8d772aef9759202a3a3ebcd497a7bd09074d7cc0"
+    },
+    {
+      "path": "Topic04/tb/jkFilpFlopParameter_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/jkFilpFlopParameter_tb.v",
+      "kind": "tb",
+      "sha256": "16f0c43402bc15f4efbc5795659caea1f46e90eda05c33e2e11970d6b3c56da4"
+    },
+    {
+      "path": "Topic04/tb/loadableUpCounter_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/loadableUpCounter_tb.v",
+      "kind": "tb",
+      "sha256": "2e0f8bcb9d2135c1acd2d835e7e67d329d950a7caaa76c1fee1177d3387e8af6"
+    },
+    {
+      "path": "Topic04/tb/mod12UpCounter_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/mod12UpCounter_tb.v",
+      "kind": "tb",
+      "sha256": "dd460c7338ddf3d1ec9e6aadb6b280750fe607a3e23ecb4208f392e34a3464d4"
+    },
+    {
+      "path": "Topic04/tb/siso_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/siso_tb.v",
+      "kind": "tb",
+      "sha256": "bcac3b1406cd4770274cf726e8a9475dfc574ef01b993f961efd36f3da14553e"
+    },
+    {
+      "path": "Topic04/tb/srLatch_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/srLatch_tb.v",
+      "kind": "tb",
+      "sha256": "f7fe3739180c88dc6445107f2a6357ea45b57975168747086b25ffb0ad3fb8cc"
+    },
+    {
+      "path": "Topic04/tb/tffUsingDff_tb.v",
+      "source_path": "Labs Verilog/Lab4/tb/tffUsingDff_tb.v",
+      "kind": "tb",
+      "sha256": "c8846317d633ce04f80277da578035451c63f887793f89e1a3f6c84f2f5805a6"
+    },
+    {
+      "path": "Topic05/rtl/asynchronousDualPortRAM.v",
+      "source_path": "Labs Verilog/Lab5/rtl/asynchronousDualPortRAM.v",
+      "kind": "rtl",
+      "sha256": "ea91711065f51517678976d08249e712b12d6a1e91df3fe6f84647a7d475648f"
+    },
+    {
+      "path": "Topic05/rtl/asynchronousSinglePort.v",
+      "source_path": "Labs Verilog/Lab5/rtl/asynchronousSinglePort.v",
+      "kind": "rtl",
+      "sha256": "d6925117c917df501fc079fc51d821c87b1b27a2fb5994d3a1b6524861632a47"
+    },
+    {
+      "path": "Topic05/rtl/clockBuffer.v",
+      "source_path": "Labs Verilog/Lab5/rtl/clockBuffer.v",
+      "kind": "rtl",
+      "sha256": "174bca652e41111d2a4f10e6d3b8121ec2a25a0c2d465f60835f8a15ba5a692d"
+    },
+    {
+      "path": "Topic05/rtl/dualPortRam.v",
+      "source_path": "Labs Verilog/Lab5/rtl/dualPortRam.v",
+      "kind": "rtl",
+      "sha256": "449ada8b6cb27502d4ef592be3c581ec2a0d1aba22faa61913f16a535b5c4bd3"
+    },
+    {
+      "path": "Topic05/rtl/fifo16x8_m1.v",
+      "source_path": "Labs Verilog/Lab5/rtl/fifo16x8_m1.v",
+      "kind": "rtl",
+      "sha256": "39263ccd8819407ec070b8137c1e27cb20d6c5cb7e7437fb2b0350b88df6690d"
+    },
+    {
+      "path": "Topic05/rtl/fifo16x8_m2.v",
+      "source_path": "Labs Verilog/Lab5/rtl/fifo16x8_m2.v",
+      "kind": "rtl",
+      "sha256": "a21bf27675b7932d51a8d288967ab97fd8af76667fb6fd765c87967204e8286a"
+    },
+    {
+      "path": "Topic05/tb/asynchronousDualPortRAM_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/asynchronousDualPortRAM_tb.v",
+      "kind": "tb",
+      "sha256": "12e28f2f42f14c8605093fb15ccf9501e7f1f379e188e3bac66797eaa6ad84e4"
+    },
+    {
+      "path": "Topic05/tb/asynchronousSinglePort_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/asynchronousSinglePort_tb.v",
+      "kind": "tb",
+      "sha256": "c10f563f86a8e6085116c89e844025dac9de4a3174da479061d6bedf6e9afc53"
+    },
+    {
+      "path": "Topic05/tb/clockBuffer_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/clockBuffer_tb.v",
+      "kind": "tb",
+      "sha256": "b8bc67c3710954b99684cbf030cc2caad9185f371008fc462471590c46d983f3"
+    },
+    {
+      "path": "Topic05/tb/dualPortRAM_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/dualPortRAM_tb.v",
+      "kind": "tb",
+      "sha256": "089f37c7658ee344dfea66ff840d5ab11d5db72e45cc0b446d738afd9d82ef5b"
+    },
+    {
+      "path": "Topic05/tb/fifo16x8_m2_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/fifo16x8_m2_tb.v",
+      "kind": "tb",
+      "sha256": "d29a68c7db104066099a315cdab14758731bf1e0d06e2ea10901677f624a6e73"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/rtl/decoderDataflow.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/rtl/decoderDataflow.v",
+      "kind": "rtl",
+      "sha256": "477ada8d7e8a05b590e8f1d0f7ae418b68b00276ecdb0fe8daa14ebed4219c6d"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/rtl/fullSubUsingHalf.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/rtl/fullSubUsingHalf.v",
+      "kind": "rtl",
+      "sha256": "ed7d8fbf42a5f34d5f9348fdc719e7231a075eb90dce89339d136feacabb6e3d"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/rtl/halfSubDataflow.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/rtl/halfSubDataflow.v",
+      "kind": "rtl",
+      "sha256": "8050f9a46270a14241b82c4cfbfb36f121051066ea89a6483b8c2fe8bffca468"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/rtl/muxQ3andQ4.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/rtl/muxQ3andQ4.v",
+      "kind": "rtl",
+      "sha256": "03b9ea728e2eaf910fc8cbb474064cf68f9861e0660576d0a3a2ebaa14985190"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/tb/decoderDataflow_tb.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/tb/decoderDataflow_tb.v",
+      "kind": "tb",
+      "sha256": "80461444fded6430ad02db413442ed4c59f7c44e8bbfac122379496233ca8e67"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/tb/fullSubUsingHalf_tb.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/tb/fullSubUsingHalf_tb.v",
+      "kind": "tb",
+      "sha256": "6eeb71815f197b1c703dcca9af6d46ebf8b4f6f7e0f374cefbb52bc76e3d3430"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/tb/halfSubDataflow_tb.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/tb/halfSubDataflow_tb.v",
+      "kind": "tb",
+      "sha256": "e1ed9081a6eb9ad9e68cf2be2c3f72eef1706685086d2d932b62120e51414ac7"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/tb/muxQ3andQ4_tb.v",
+      "source_path": "Labs Verilog/Assignments/Assignment1/tb/muxQ3andQ4_tb.v",
+      "kind": "tb",
+      "sha256": "25099ae77737524c8fe44ef7f84fb6cdc18ae2bd98eb7342ddab0477bec92110"
+    },
+    {
+      "path": "Topic01/waveforms/bidirectionalBuffer-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/bidirectionalBuffer-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "39d01b0937646ad06bc1d8c695dd7caf514ade61f6eda68369051e45fbea068d"
+    },
+    {
+      "path": "Topic01/synthesis/bidirectionalBuffer-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/bidirectionalBuffer-rtl.png",
+      "kind": "synthesis",
+      "sha256": "132d1dad03ac8989b9b40953ee118f6098af17df9ce2c34fb4640ac83746b5a5"
+    },
+    {
+      "path": "Topic01/waveforms/decoderDataflow-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/decoderDataflow-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "6e574039699f19ba7cac7b1c1ecb1eea8dcf827349b3e2dab753dc271147d8d9"
+    },
+    {
+      "path": "Topic01/synthesis/decoderDataflow-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/decoderDataflow-rtl.png",
+      "kind": "synthesis",
+      "sha256": "9094263a1c7c348eed329da4e0cce4509731e2d9d47531d21db187faba88249f"
+    },
+    {
+      "path": "Topic01/waveforms/fullAdderDataflow-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/fullAdderDataflow-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "c012c869a093612de264683fdf3dc8a8f96c2474327ba1e0f36088eb20d983b5"
+    },
+    {
+      "path": "Topic01/synthesis/fullAdderDataflow-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/fullAdderDataflow-rtl.png",
+      "kind": "synthesis",
+      "sha256": "4bfe2f97e7d4a51336fa5245c719175cc11baf765e677517e1fd2e737a0dd589"
+    },
+    {
+      "path": "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/fullAdderUsingHalfAdder-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "2e3b6c7dae46d1a013affb3befdc5acd5a1a64ddcc2a686e7d7b338a3ecd89ad"
+    },
+    {
+      "path": "Topic01/synthesis/fullAdderUsingHalfAdder-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/fullAdderUsingHalfAdder-rtl.png",
+      "kind": "synthesis",
+      "sha256": "86d342de26430384911b4ae00265ed681d69888935b44cbf3e70bf4d818697f9"
+    },
+    {
+      "path": "Topic01/waveforms/halfAdder-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/halfAdder-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "31f989e738a941cb780d3d622e0739a3914377246343ec6163ab8affe810a622"
+    },
+    {
+      "path": "Topic01/synthesis/halfAdder-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/halfAdder-rtl.png",
+      "kind": "synthesis",
+      "sha256": "87e51c4be6c22564e4db133313308f85b66acb8828bb513bd31386db1b800423"
+    },
+    {
+      "path": "Topic01/waveforms/mux4to1-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/mux4to1-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "ceab5672bfa1a7634ca2da8ce7e99a2f27f43fa1211c2c4e465a3cb096fa7992"
+    },
+    {
+      "path": "Topic01/synthesis/mux4to1-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/mux4to1-rtl.png",
+      "kind": "synthesis",
+      "sha256": "dfe84633366cdae2880ec46f4badd7c0d3bf2d32a420a53de074a442194ba631"
+    },
+    {
+      "path": "Topic01/waveforms/muxUsingdecoder-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/muxUsingdecoder-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "55644bb496763181553073ed6cb150111a275406d69452ab5dc74f6fcd9db4bf"
+    },
+    {
+      "path": "Topic01/synthesis/muxUsingdecoder-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/muxUsingdecoder-rtl.png",
+      "kind": "synthesis",
+      "sha256": "ea4909474c62919db61f7ff4e26837571f2baca4043a0be4ee08aca98fbbde7f"
+    },
+    {
+      "path": "Topic01/waveforms/priorityEncoder-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/priorityEncoder-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "d7ae532958334e7dea17d49546d2cbecf2680ae37187e183522daf8adf45d13a"
+    },
+    {
+      "path": "Topic01/synthesis/priorityEncoder-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/priorityEncoder-rtl.png",
+      "kind": "synthesis",
+      "sha256": "fbff4f5803e1ea968021ea3b244d735aad194ce6b6486a2f87c0dd29b12d1498"
+    },
+    {
+      "path": "Topic01/waveforms/rippleCarryAdder-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/rippleCarryAdder-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "835cdb491271630d258ffd58d082b426bf332d897c3aed5149d92d3fe5102983"
+    },
+    {
+      "path": "Topic01/waveforms/rippleCarryAdderStruct-waveform-original.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/rippleCarryAdderStruct-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "53aafc7068f5f1f9a0efb708d8ecd6f7199cb266e1899d25e3b0ef18a3eb5db2"
+    },
+    {
+      "path": "Topic01/synthesis/rippleCarryAdderStruct-rtl.png",
+      "source_path": "Labs Verilog/Lab1/synthesis/rippleCarryAdderStruct-rtl.png",
+      "kind": "synthesis",
+      "sha256": "e67fad2ba76eb09f11df4835b2511cd96c79e01576f338ba4960e916cc275390"
+    },
+    {
+      "path": "Topic03/waveforms/decoder3_8.png",
+      "source_path": "Labs Verilog/Lab3/waveforms/decoder3_8.png",
+      "kind": "waveforms",
+      "sha256": "6e5cb66fff71e61b4c8015f327f304b0f8259f6f40e554b873a68e3718bfe1fe"
+    },
+    {
+      "path": "Topic03/synthesis/decoder3_8-rtl.png",
+      "source_path": "Labs Verilog/Lab3/synthesis/decoder3_8-rtl.png",
+      "kind": "synthesis",
+      "sha256": "612108e305c2b49c3ccfe0f424dfecae4fdd8c4149af849e3b07c36c3d2834c3"
+    },
+    {
+      "path": "Topic03/waveforms/data/decoder3_8.vcd",
+      "source_path": "Labs Verilog/Lab3/waveforms/data/decoder3_8.vcd",
+      "kind": "waveform-data",
+      "sha256": "8a57724b7d7a4d479accfdfe041e01890a36a538fb1ea21ed29fea0242f94c6b"
+    },
+    {
+      "path": "Topic03/waveforms/data/decoder3_8.wlf",
+      "source_path": "Labs Verilog/Lab3/waveforms/data/decoder3_8.wlf",
+      "kind": "waveform-data",
+      "sha256": "c5baa6cff1f82d4d86e33902aae791088167a73fee0de9606f9aeda7a34da78c"
+    },
+    {
+      "path": "Topic03/waveforms/priorityEnc.png",
+      "source_path": "Labs Verilog/Lab3/waveforms/priorityEnc.png",
+      "kind": "waveforms",
+      "sha256": "674345bc19c80a679d885194b84db59a55aa03610c1b8d49ff6ce117a50c376c"
+    },
+    {
+      "path": "Topic03/synthesis/priorityEnc-rtl.png",
+      "source_path": "Labs Verilog/Lab3/synthesis/priorityEnc-rtl.png",
+      "kind": "synthesis",
+      "sha256": "361af25c31f5eb77577fcc44c575448629a5640628070d1389db0c7cc1086879"
+    },
+    {
+      "path": "Topic03/waveforms/data/priorityEnc.vcd",
+      "source_path": "Labs Verilog/Lab3/waveforms/data/priorityEnc.vcd",
+      "kind": "waveform-data",
+      "sha256": "f1d972b1c498df861e18d6d392076297b3c87fe49e8fc51823882199ae8590fc"
+    },
+    {
+      "path": "Topic03/waveforms/data/priorityEnc.wlf",
+      "source_path": "Labs Verilog/Lab3/waveforms/data/priorityEnc.wlf",
+      "kind": "waveform-data",
+      "sha256": "713d2e21c0ccaaea5499638484609106ea4b7a667a0583bfe939d76fea9b9327"
+    },
+    {
+      "path": "Topic04/waveforms/srLatch-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/srLatch-waveform.png",
+      "kind": "waveforms",
+      "sha256": "a7c9b3fd956fdfcbd3bfe2ac37bafe13cd8b6aa77c242523190ef79256b1d2e7"
+    },
+    {
+      "path": "Topic04/synthesis/srLatch-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/srLatch-rtl.png",
+      "kind": "synthesis",
+      "sha256": "f8b46efb80917e2c5ffd576aec2fea70541a8e7080803892ff1e8efda4bd26f5"
+    },
+    {
+      "path": "Topic04/waveforms/data/srLatch-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/srLatch-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "7d3563fa2ea93116e4590f10f54504d791d9851380b206ebaf0b8e9cf9f9ac79"
+    },
+    {
+      "path": "Topic04/waveforms/data/srLatch-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/srLatch-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "4e55eff695bcaca39d8bb3667dff3bf2a935e1c9dcfa59e07af1805ba0cb6473"
+    },
+    {
+      "path": "Topic04/waveforms/jkFilpFlopParameter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/jkFilpFlopParameter-waveform.png",
+      "kind": "waveforms",
+      "sha256": "f361383c372f2bd22f3faa359af0c2f33039bb24210e6744da3746f46532b076"
+    },
+    {
+      "path": "Topic04/synthesis/jkFilpFlopParameter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/jkFilpFlopParameter-rtl.png",
+      "kind": "synthesis",
+      "sha256": "55c85c6346fe586db7b571721eb235dfd19d74b41842a84ce037b0ead2b74d9a"
+    },
+    {
+      "path": "Topic04/waveforms/data/jkFilpFlopParameter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/jkFilpFlopParameter-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "b60e6ebc402c8c03e2ad1b7164da7f0d128e0f398f2a71b8708ab74e3bf0ab56"
+    },
+    {
+      "path": "Topic04/waveforms/data/jkFilpFlopParameter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/jkFilpFlopParameter-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "0b53c0e3c36291bb225cd2c74fa10e87091202bbdebfe119826985606bc6e5fc"
+    },
+    {
+      "path": "Topic04/waveforms/tffUsingDff-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/tffUsingDff-waveform.png",
+      "kind": "waveforms",
+      "sha256": "63910a077fa53e98dab18ce2e1d59e29a92c22ce15290d25ebc62d265689577d"
+    },
+    {
+      "path": "Topic04/synthesis/tffUsingDff-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/tffUsingDff-rtl.png",
+      "kind": "synthesis",
+      "sha256": "5713a33a6c0e171f7ebc318a0ccb31ce9da4d41cf6f1063a3674123f898f7282"
+    },
+    {
+      "path": "Topic04/waveforms/data/tffUsingDff-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/tffUsingDff-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "23255d19d41cb34c91fbe6649a3572cfbdd1750e84564179aca69464b92c4dfc"
+    },
+    {
+      "path": "Topic04/waveforms/data/tffUsingDff-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/tffUsingDff-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "d4aea8b71a5c4cf762dfdf0e4801bf5813e3bcb8542a41f9221e0fd262787632"
+    },
+    {
+      "path": "Topic04/waveforms/loadableUpCounter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/loadableUpCounter-waveform.png",
+      "kind": "waveforms",
+      "sha256": "6b97776458b6273f1a0c22318b0b604007998f7801973ce69a86a42ab7e15fe6"
+    },
+    {
+      "path": "Topic04/synthesis/loadableUpCounter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/loadableUpCounter-rtl.png",
+      "kind": "synthesis",
+      "sha256": "2a64c00ccf58317e6a873e489f80b1e3e8a2684b83a9b45aa2ea11796d0506fe"
+    },
+    {
+      "path": "Topic04/waveforms/data/loadableUpCounter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "5d8373b4d4ee99fe38eb5e38966061ee8567bcb000ed1e04092d5cc9a8a2fdd2"
+    },
+    {
+      "path": "Topic04/waveforms/data/loadableUpCounter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "2a47ee04af0075e31029a1b8ee85bb713a011ba3813d53193c6d608f5930465f"
+    },
+    {
+      "path": "Topic04/waveforms/mod12UpCounter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/mod12UpCounter-waveform.png",
+      "kind": "waveforms",
+      "sha256": "070d72f4ac954c5b1ee6086187ef37d7e330bdd7d593e89bf7466ca5d6a5e82e"
+    },
+    {
+      "path": "Topic04/synthesis/mod12UpCounter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/mod12UpCounter-rtl.png",
+      "kind": "synthesis",
+      "sha256": "8646956ddb41ed126f89f037e8d190a99c8b8933e93c7e38380946907d0148ed"
+    },
+    {
+      "path": "Topic04/waveforms/mod12UpCounter-detail-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/mod12UpCounter-detail-waveform.png",
+      "kind": "waveforms",
+      "sha256": "dd36e40c225b9b6ece7aac8d6a2bce7f33e661fa45eb2cb58a1f7d3d06361f36"
+    },
+    {
+      "path": "Topic04/waveforms/mod12UpCounter-rollover-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/mod12UpCounter-rollover-waveform.png",
+      "kind": "waveforms",
+      "sha256": "1ad75bb44c9d96437da85b59c4bb5dc6fe8b96748b18fdb8421564a53ed99a03"
+    },
+    {
+      "path": "Topic04/waveforms/data/mod12UpCounter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/mod12UpCounter-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "3f9d026710e63d4f0811c918eb6ec905d16dad9f7a34cc7a2478f75ce12e3176"
+    },
+    {
+      "path": "Topic04/waveforms/data/mod12UpCounter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/mod12UpCounter-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "56ae5b4a84f2e5323970a4f888c79d1e7c16a15cd25846ffdff294954512d857"
+    },
+    {
+      "path": "Topic04/waveforms/binaryUpDownCounter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/binaryUpDownCounter-waveform.png",
+      "kind": "waveforms",
+      "sha256": "63ad08d6b043b6b4d8c9b6db30e912707aa87e5d22b908ece715b59c8c3c03ef"
+    },
+    {
+      "path": "Topic04/synthesis/binaryUpDownCounter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/binaryUpDownCounter-rtl.png",
+      "kind": "synthesis",
+      "sha256": "ee60d04e0abd9bc50236615ad3149dbf31b933cedd092d238d62c7b5075d2de9"
+    },
+    {
+      "path": "Topic04/waveforms/data/binaryUpDownCounter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "8808fdafd1708bd7bc17a594446a5306709a0f9b44f9f087e6e125d0a5ff5829"
+    },
+    {
+      "path": "Topic04/waveforms/data/binaryUpDownCounter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "126df1592af1da52defb420d82d02b3531b96ffe676a9042bbeba6b703f1009a"
+    },
+    {
+      "path": "Topic04/waveforms/siso4bits-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/siso4bits-waveform.png",
+      "kind": "waveforms",
+      "sha256": "3da171ebc45e4ca16a282c792d26ea9de85192251459f6e55a947af6c38d5395"
+    },
+    {
+      "path": "Topic04/synthesis/siso4bits-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/siso4bits-rtl.png",
+      "kind": "synthesis",
+      "sha256": "2d2f52a12bb001c003b676873e61cc1c12d0135bea3eba606d16d2e4f600c609"
+    },
+    {
+      "path": "Topic04/waveforms/data/siso4bits-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/siso4bits-verification.vcd",
+      "kind": "waveform-data",
+      "sha256": "1f847cb087004aa7dd973f9ea5f5c303eaf5ce0bb497218cdad145a454784b60"
+    },
+    {
+      "path": "Topic04/waveforms/data/siso4bits-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/siso4bits-verification.wlf",
+      "kind": "waveform-data",
+      "sha256": "9300887f23c6b12f31ece4ce0e1228e9998e0202baaa06e7aed5a3560d4b5015"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/halfSubDataflow-waveform-original.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/halfSubDataflow-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "25ddef54cf8090c78aa2dd3e6190d6d52a9f4ad047ba9bd0171d29fc76a09d8c"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/synthesis/halfSubDataflow-rtl.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/halfSubDataflow-rtl.png",
+      "kind": "synthesis",
+      "sha256": "e308f2cf9fc2efce248b2b58c110e59864615870aa119e0fc767034bdfb4528b"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/fullSubUsingHalf-waveform-original.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/fullSubUsingHalf-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "130a2e12fd1710de9023c10b96d6923db83f5adc85f8bf88f961227efa47d5ab"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/synthesis/fullSubUsingHalf-rtl.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/fullSubUsingHalf-rtl.png",
+      "kind": "synthesis",
+      "sha256": "422999fcd891d43cd0fefbca3da35d528bc68937988b00155406c0e032306f71"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/fullSubUsingHalf-waveform-fixed.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/fullSubUsingHalf-waveform-fixed.png",
+      "kind": "waveforms",
+      "sha256": "4461570122de5d79024c71e646487741a504f81988c9adaa08ce91b3b3ec4bf5"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/mux4to1-waveform-original.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/mux4to1-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "e0fc39833216ad52045d5b2e491b94615e0bf6f8af4e5141f581afb8387c8372"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/synthesis/mux4to1-rtl.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/mux4to1-rtl.png",
+      "kind": "synthesis",
+      "sha256": "715fcd8bebd7752acc9329a1763af259fbe4a1143035cba0f3454ebd5a472a4a"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/mux2to1-waveform-original.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/mux2to1-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "a4f4f3b8d17664afd5a19896dc63c9579c9df960867fae6d8195ecd8f60ac759"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/synthesis/mux2to1-rtl.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/mux2to1-rtl.png",
+      "kind": "synthesis",
+      "sha256": "47f28aaabf7c6306c995387d5fa3995cd5695d240f98d2ef5696c6f70a5d7170"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/waveforms/decoder2to4-waveform-original.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/waveforms/decoder2to4-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "f635d1c4e34dce963f253c5927c998446353ed71a86f9f2710e037c57929e774"
+    },
+    {
+      "path": "ExtraPractice/CombinationalCircuits/synthesis/decoder2to4-rtl.png",
+      "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/decoder2to4-rtl.png",
+      "kind": "synthesis",
+      "sha256": "2af4b5af07663f8f3cdb65d87d3424577cc41554ac7a96fea5279f13cd62fa6e"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "designs": [
+    {
+      "folder": "Topic01",
+      "id": "bidirectionalBuffer",
+      "title": "Bidirectional buffer",
+      "rtl": [
+        "Topic01/rtl/bidirectionalBuffer.v"
+      ],
+      "testbench": "Topic01/tb/bidirectionalBuffer_tb.v",
+      "simulation_top": "bidirectionalBuffer_tb",
+      "images": [
+        "Topic01/waveforms/bidirectionalBuffer-waveform-original.png",
+        "Topic01/synthesis/bidirectionalBuffer-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": false,
+      "waveform_source_matches": null,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "0"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "decoderDataflow",
+      "title": "2-to-4 dataflow decoder",
+      "rtl": [
+        "Topic01/rtl/decoderDataflow.v"
+      ],
+      "testbench": "Topic01/tb/decoderDataflow_tb.v",
+      "simulation_top": "decoderDataflow_tb",
+      "images": [
+        "Topic01/waveforms/decoderDataflow-waveform-original.png",
+        "Topic01/synthesis/decoderDataflow-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "4"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "fullAdderDataflow",
+      "title": "Dataflow full adder",
+      "rtl": [
+        "Topic01/rtl/fullAdderDataflow.v"
+      ],
+      "testbench": "Topic01/tb/fullAdderDataflow_tb.v",
+      "simulation_top": "fullAdderDataflow_tb",
+      "images": [
+        "Topic01/waveforms/fullAdderDataflow-waveform-original.png",
+        "Topic01/synthesis/fullAdderDataflow-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "2"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "fullAdderUsingHalfAdder",
+      "title": "Full adder using half adders",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v"
+      ],
+      "testbench": "Topic01/tb/tbExtra/fullAdderUsingHalfAdder_tb.v",
+      "simulation_top": "fullAdderUsingHalfAdder_tb",
+      "images": [
+        "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-original.png",
+        "Topic01/synthesis/fullAdderUsingHalfAdder-rtl.png"
+      ],
+      "note": "The task runner selects the TB under tbExtra. This RTL file includes its own halfAdder module. The other saved TB with the same module name is retained as a separate draft.",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "2"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "halfAdder",
+      "title": "Half adder",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/halfAdder.v"
+      ],
+      "testbench": "Topic01/tb/halfAdder_tb.v",
+      "simulation_top": "halfAdder_tb",
+      "images": [
+        "Topic01/waveforms/halfAdder-waveform-original.png",
+        "Topic01/synthesis/halfAdder-rtl.png"
+      ],
+      "note": "The root TB is selected. The alternate tbExtra/halfAdder_tb.v is retained as an unfinished draft.",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "2"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "mux4to1",
+      "title": "4-to-1 mux using 2-to-1 muxes",
+      "rtl": [
+        "Topic01/rtl/mux4to1.v"
+      ],
+      "testbench": "Topic01/tb/mux4to1_tb.v",
+      "simulation_top": "mux4to1_tb",
+      "images": [
+        "Topic01/waveforms/mux4to1-waveform-original.png",
+        "Topic01/synthesis/mux4to1-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "2"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "muxUsingdecoder",
+      "title": "4-to-1 mux using a decoder",
+      "rtl": [
+        "Topic01/rtl/muxUsingDecoder.v"
+      ],
+      "testbench": "Topic01/tb/muxUsingdecoder_tb.v",
+      "simulation_top": "muxUsingdecoder_tb",
+      "images": [
+        "Topic01/waveforms/muxUsingdecoder-waveform-original.png",
+        "Topic01/synthesis/muxUsingdecoder-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": false,
+      "waveform_source_matches": null,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "2"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "priorityEncoder",
+      "title": "Priority encoder",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/priorityEncoder.v"
+      ],
+      "testbench": "Topic01/tb/tbExtra/priorityEncoder_tb.v",
+      "simulation_top": "priorityEncoder_tb",
+      "images": [
+        "Topic01/waveforms/priorityEncoder-waveform-original.png",
+        "Topic01/synthesis/priorityEncoder-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "5"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "rippleCarryAdder",
+      "title": "4-bit ripple-carry adder",
+      "rtl": [
+        "Topic01/rtl/rippleCarryAdder.v"
+      ],
+      "testbench": "Topic01/tb/rippleCarryAdder_tb.v",
+      "simulation_top": "rippleCarryAdder_tb",
+      "images": [
+        "Topic01/waveforms/rippleCarryAdder-waveform-original.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": false,
+      "waveform_source_matches": null,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "FAIL",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": ""
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "rippleCarryAdderStruct",
+      "title": "Gate-level ripple-carry adder",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v"
+      ],
+      "testbench": "Topic01/tb/tbExtra/ripplyCarryAdderStruct_tb.v",
+      "simulation_top": "rippleCarryAdderStruct_tb",
+      "images": [
+        "Topic01/waveforms/rippleCarryAdderStruct-waveform-original.png",
+        "Topic01/synthesis/rippleCarryAdderStruct-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": null,
+      "evidence_source_matches": null,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "MAX II",
+        "device": "EPM240T100C5",
+        "logic_elements": "10"
+      }
+    },
+    {
+      "folder": "Topic03",
+      "id": "decoder3_8",
+      "title": "3-to-8 decoder",
+      "rtl": [
+        "Topic03/rtl/decoder3_8.v"
+      ],
+      "testbench": "Topic03/tb/decoder3_8_tb.v",
+      "simulation_top": "decoder3_8_tb",
+      "images": [
+        "Topic03/waveforms/decoder3_8.png",
+        "Topic03/synthesis/decoder3_8-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "quartus_device": "5CGXFC7C7F23C8",
+        "analysis_and_synthesis_exit": 0,
+        "mapped_lut_nodes": 8,
+        "mapped_registers": 0
+      }
+    },
+    {
+      "folder": "Topic03",
+      "id": "priorityEnc",
+      "title": "8-to-3 priority encoder",
+      "rtl": [
+        "Topic03/rtl/encoderPriority.v"
+      ],
+      "testbench": "Topic03/tb/encoderPriority_tb.v",
+      "simulation_top": "priorityEnc_tb",
+      "images": [
+        "Topic03/waveforms/priorityEnc.png",
+        "Topic03/synthesis/priorityEnc-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "quartus_device": "5CGXFC7C7F23C8",
+        "analysis_and_synthesis_exit": 0,
+        "mapped_lut_nodes": 5,
+        "mapped_registers": 0
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "srLatch",
+      "title": "Gate-level SR latch",
+      "rtl": [
+        "Topic04/rtl/latchSR.v"
+      ],
+      "testbench": "Topic04/tb/srLatch_tb.v",
+      "simulation_top": "srLatch_tb",
+      "images": [
+        "Topic04/waveforms/srLatch-waveform.png",
+        "Topic04/synthesis/srLatch-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "jkFilpFlopParameter",
+      "title": "JK flip-flop with named operations",
+      "rtl": [
+        "Topic04/rtl/jkFlipFlopParameter.v"
+      ],
+      "testbench": "Topic04/tb/jkFilpFlopParameter_tb.v",
+      "simulation_top": "jkFilpFlopParameter_tb",
+      "images": [
+        "Topic04/waveforms/jkFilpFlopParameter-waveform.png",
+        "Topic04/synthesis/jkFilpFlopParameter-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "tffUsingDff",
+      "title": "T flip-flop using a D flip-flop",
+      "rtl": [
+        "Topic04/rtl/tUsingDff.v"
+      ],
+      "testbench": "Topic04/tb/tffUsingDff_tb.v",
+      "simulation_top": "tffUsingDff_tb",
+      "images": [
+        "Topic04/waveforms/tffUsingDff-waveform.png",
+        "Topic04/synthesis/tffUsingDff-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "loadableUpCounter",
+      "title": "Loadable binary up counter",
+      "rtl": [
+        "Topic04/rtl/loadableUpCounter.v"
+      ],
+      "testbench": "Topic04/tb/loadableUpCounter_tb.v",
+      "simulation_top": "loadableUpCounter_tb",
+      "images": [
+        "Topic04/waveforms/loadableUpCounter-waveform.png",
+        "Topic04/synthesis/loadableUpCounter-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": false,
+      "waveform_source_matches": false,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "mod12UpCounter",
+      "title": "Loadable MOD-12 up counter",
+      "rtl": [
+        "Topic04/rtl/mod12UpCounter.v"
+      ],
+      "testbench": "Topic04/tb/mod12UpCounter_tb.v",
+      "simulation_top": "mod12UpCounter_tb",
+      "images": [
+        "Topic04/waveforms/mod12UpCounter-waveform.png",
+        "Topic04/synthesis/mod12UpCounter-rtl.png",
+        "Topic04/waveforms/mod12UpCounter-detail-waveform.png",
+        "Topic04/waveforms/mod12UpCounter-rollover-waveform.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "binaryUpDownCounter",
+      "title": "Loadable binary up-down counter",
+      "rtl": [
+        "Topic04/rtl/binaryUpDownCounter.v"
+      ],
+      "testbench": "Topic04/tb/binaryUpDownCounter_tb.v",
+      "simulation_top": "binaryUpDownCounter_tb",
+      "images": [
+        "Topic04/waveforms/binaryUpDownCounter-waveform.png",
+        "Topic04/synthesis/binaryUpDownCounter-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": false,
+      "waveform_source_matches": false,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "siso4bits",
+      "title": "Four-bit SISO right-shift register",
+      "rtl": [
+        "Topic04/rtl/siso.v"
+      ],
+      "testbench": "Topic04/tb/siso_tb.v",
+      "simulation_top": "siso4bits_tb",
+      "images": [
+        "Topic04/waveforms/siso4bits-waveform.png",
+        "Topic04/synthesis/siso4bits-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "asynchronousSinglePort",
+      "title": "Parameterized asynchronous single-port RAM",
+      "rtl": [
+        "Topic05/rtl/asynchronousSinglePort.v"
+      ],
+      "testbench": "Topic05/tb/asynchronousSinglePort_tb.v",
+      "simulation_top": "asynchronousSinglePort_tb",
+      "images": [],
+      "note": "The saved TB has interface/declaration errors. It is preserved as a draft.",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "Topic05",
+      "id": "dualPortRAM",
+      "title": "Synchronous dual-port RAM",
+      "rtl": [
+        "Topic05/rtl/dualPortRam.v"
+      ],
+      "testbench": "Topic05/tb/dualPortRAM_tb.v",
+      "simulation_top": "dualPortRAM_tb",
+      "images": [],
+      "note": "",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "Topic05",
+      "id": "asynchronousDualPortRAM",
+      "title": "Dual-clock RAM",
+      "rtl": [
+        "Topic05/rtl/asynchronousDualPortRAM.v"
+      ],
+      "testbench": "Topic05/tb/asynchronousDualPortRAM_tb.v",
+      "simulation_top": "asynchronousDualPortRAM_tb",
+      "images": [],
+      "note": "",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "Topic05",
+      "id": "clockBuffer",
+      "title": "Clock buffer",
+      "rtl": [
+        "Topic05/rtl/clockBuffer.v"
+      ],
+      "testbench": "Topic05/tb/clockBuffer_tb.v",
+      "simulation_top": "clockBuffer_tb",
+      "images": [],
+      "note": "This TB has a free-running clock and no finish statement; use a bounded simulator run.",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "Topic05",
+      "id": "fifo16x8_m1",
+      "title": "FIFO using an occupancy counter",
+      "rtl": [
+        "Topic05/rtl/fifo16x8_m1.v"
+      ],
+      "testbench": null,
+      "simulation_top": "fifo16x8_m1_tb",
+      "images": [],
+      "note": "RTL draft only: there is no saved M1 testbench.",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "Topic05",
+      "id": "fifo16x8_m2",
+      "title": "FIFO using extended pointers",
+      "rtl": [
+        "Topic05/rtl/fifo16x8_m2.v"
+      ],
+      "testbench": "Topic05/tb/fifo16x8_m2_tb.v",
+      "simulation_top": "fifo16x8_m2_tb",
+      "images": [],
+      "note": "The saved TB still uses the earlier width settings and active-high reset stimulus; the current RTL uses active-low rst_n. Compilation alone does not establish correct stimulus.",
+      "evidence_status": "No saved waveform or synthesis exports",
+      "evidence_source_matches": null
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "halfSubDataflow",
+      "title": "Dataflow half subtractor",
+      "rtl": [
+        "ExtraPractice/CombinationalCircuits/rtl/halfSubDataflow.v"
+      ],
+      "testbench": "ExtraPractice/CombinationalCircuits/tb/halfSubDataflow_tb.v",
+      "simulation_top": "halfSubDataflow_tb",
+      "images": [
+        "ExtraPractice/CombinationalCircuits/waveforms/halfSubDataflow-waveform-original.png",
+        "ExtraPractice/CombinationalCircuits/synthesis/halfSubDataflow-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "SUCCESS",
+        "logic_elements": 2
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "fullSubUsingHalf",
+      "title": "Full subtractor using half subtractors",
+      "rtl": [
+        "ExtraPractice/CombinationalCircuits/rtl/fullSubUsingHalf.v"
+      ],
+      "testbench": "ExtraPractice/CombinationalCircuits/tb/fullSubUsingHalf_tb.v",
+      "simulation_top": "fullSubUsingHalf_tb",
+      "images": [
+        "ExtraPractice/CombinationalCircuits/waveforms/fullSubUsingHalf-waveform-original.png",
+        "ExtraPractice/CombinationalCircuits/synthesis/fullSubUsingHalf-rtl.png",
+        "ExtraPractice/CombinationalCircuits/waveforms/fullSubUsingHalf-waveform-fixed.png"
+      ],
+      "note": "The original waveform record predates the current RTL/TB. The separate fixed-timing capture has no accompanying source-hash record. Both captures are preserved as earlier illustrations; the synthesis source hashes match the current code.",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": false,
+      "evidence_source_matches": false,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: historical source hashes differ from the current RTL or selected TB",
+      "saved_synthesis": {
+        "status": "SUCCESS",
+        "logic_elements": 2
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "mux4to1",
+      "title": "2-to-1 and hierarchical 4-to-1 muxes",
+      "rtl": [
+        "ExtraPractice/CombinationalCircuits/rtl/muxQ3andQ4.v"
+      ],
+      "testbench": "ExtraPractice/CombinationalCircuits/tb/muxQ3andQ4_tb.v",
+      "simulation_top": "mux4to1_tb",
+      "images": [
+        "ExtraPractice/CombinationalCircuits/waveforms/mux4to1-waveform-original.png",
+        "ExtraPractice/CombinationalCircuits/synthesis/mux4to1-rtl.png",
+        "ExtraPractice/CombinationalCircuits/waveforms/mux2to1-waveform-original.png",
+        "ExtraPractice/CombinationalCircuits/synthesis/mux2to1-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "SUCCESS",
+        "logic_elements": 2
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "decoder2to4",
+      "title": "2-to-4 dataflow decoder",
+      "rtl": [
+        "ExtraPractice/CombinationalCircuits/rtl/decoderDataflow.v"
+      ],
+      "testbench": "ExtraPractice/CombinationalCircuits/tb/decoderDataflow_tb.v",
+      "simulation_top": "decoder2to4_tb",
+      "images": [
+        "ExtraPractice/CombinationalCircuits/waveforms/decoder2to4-waveform-original.png",
+        "ExtraPractice/CombinationalCircuits/synthesis/decoder2to4-rtl.png"
+      ],
+      "note": "",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: saved RTL/TB hashes match the imported source",
+      "saved_synthesis": {
+        "status": "SUCCESS",
+        "logic_elements": 4
+      }
+    }
+  ],
+  "alternate_testbenches": [
+    {
+      "folder": "Topic01",
+      "id": "full-adder-alternate-tb",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v"
+      ],
+      "testbench": "Topic01/tb/fullAdderUsingHalfAdder_tb.v",
+      "simulation_top": "fullAdderUsingHalfAdder_tb"
+    },
+    {
+      "folder": "Topic01",
+      "id": "half-adder-alternate-tb",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/halfAdder.v"
+      ],
+      "testbench": "Topic01/tb/tbExtra/halfAdder_tb.v",
+      "simulation_top": "halfAdder_tb"
+    },
+    {
+      "folder": "Topic01",
+      "id": "structural-adder-alternate-tb",
+      "rtl": [
+        "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v"
+      ],
+      "testbench": "Topic01/tb/tbExtra/ripplyCarryAdderStruct.v",
+      "simulation_top": "rippleCarryAdder_tb"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+$date
+	Tue Nov 10 15:28:15 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module srLatch_tb $end
+$var reg 1 ! s $end
+$var reg 1 " r $end
+$var wire 1 # Q_out $end
+$var wire 1 $ Qb_out $end
+
+$scope task srValues $end
+$var reg 1 % sval $end
+$var reg 1 & rval $end
+$upscope $end
+
+$scope module dut $end
+$var wire 1 ' s $end
+$var wire 1 ( r $end
+$var wire 1 # Q_out $end
+$var wire 1 $ Qb_out $end
+$var wire 1 ) w1 $end
+$var wire 1 * w2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1%
+1&
+0#
+0$
+0)
+0*
+1(
+1'
+$end
+#10000
+0%
+0!
+0'
+1*
+1$
+#20000
+0&
+0"
+0(
+#30000
+1&
+1"
+1(
+#40000
+1%
+0&
+1!
+0"
+1'
+0(
+0*
+0$
+1)
+1#
+#50000
+0%
+0!
+0'
+#60000
+$dumpoff
+x!
+x"
+x%
+x&
+x#
+x$
+x)
+x*
+x(
+x'
+$end

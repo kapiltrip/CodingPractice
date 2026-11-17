@@ -1,0 +1,362 @@
+{
+  "tool": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "scope": "RTL and saved TB compile/elaboration only; no functional simulation or synthesis rerun",
+  "language_mode": "iverilog -g2012",
+  "checks": [
+    {
+      "folder": "Topic01",
+      "id": "bidirectionalBuffer",
+      "simulation_top": "bidirectionalBuffer_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/bidirectionalBuffer.v": "bd46a5fbd129104e4eef51ef6f34929ce4455ad33177d81d2fff2089fdf85944",
+        "Topic01/tb/bidirectionalBuffer_tb.v": "99d9a1cd05419eeaca30ed0282ed4ac689d5234952be36ebb1a0af55b9114864"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "decoderDataflow",
+      "simulation_top": "decoderDataflow_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/decoderDataflow.v": "898aef9ba51ebd2b0511184529a291d4371eb3583d49ca7b6b0467a2f603a324",
+        "Topic01/tb/decoderDataflow_tb.v": "7e2bdfb3f9af624e920ff00344b401bb21006d67404e567c391812647cd07cd3"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "fullAdderDataflow",
+      "simulation_top": "fullAdderDataflow_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/fullAdderDataflow.v": "9f5f25f503c1b9ef48789ed0e095745369ce7d419bbc833d7c0d5997a3be11d4",
+        "Topic01/tb/fullAdderDataflow_tb.v": "9f9a70a92aa0b4da74e8db559bb5bffe02f117836662552089fffb2a04bb0a98"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "fullAdderUsingHalfAdder",
+      "simulation_top": "fullAdderUsingHalfAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb",
+        "Topic01/tb/tbExtra/fullAdderUsingHalfAdder_tb.v": "1b0e242c5e352122c227e1c6efd51155e15f138f3698cdf7411652464079132d"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "halfAdder",
+      "simulation_top": "halfAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
+        "Topic01/tb/halfAdder_tb.v": "bff65848a920c9929a7bb810a702b7d664700b98683615d128a6a4ab9cc8165b"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "mux4to1",
+      "simulation_top": "mux4to1_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/mux4to1.v": "fc32e9dd397e6c9a11eaaf46df6ae64c523d5f9b50f508dfde8c96afc8933ffc",
+        "Topic01/tb/mux4to1_tb.v": "5706e80550fdb3c247334cc3b45b14765a6f762349f18cc31ab429ee3a9fb649"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "muxUsingdecoder",
+      "simulation_top": "muxUsingdecoder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/muxUsingDecoder.v": "8695d92e76cbf16e163e0336cfd1a7f0a90036628e2448d6b6b1168d25e3606f",
+        "Topic01/tb/muxUsingdecoder_tb.v": "8f15ac6ceb34316fe6723e90945275e5fe981da48c9b7ec7a323cda91f914426"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "priorityEncoder",
+      "simulation_top": "priorityEncoder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/priorityEncoder.v": "def6c95c0620c652fd07e650c1da6618c58548522851f04c57ce50edb75c4754",
+        "Topic01/tb/tbExtra/priorityEncoder_tb.v": "3b36a4a2af87dddb497bbf0205e5429d7f40627695ef7f7b0ba4376755081d8b"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "rippleCarryAdder",
+      "simulation_top": "rippleCarryAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rippleCarryAdder.v": "f86f0b764fa06d6502a2bb0ccd2022b36688b9a18c4342d08d93e719fdc6fa13",
+        "Topic01/tb/rippleCarryAdder_tb.v": "17b21e8178530925402790d213d458a683b24a0b8900f3c4b6f1416a8af7aa7d"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "rippleCarryAdderStruct",
+      "simulation_top": "rippleCarryAdderStruct_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v": "6c4a2e2c3e9dde06eba18c5c86db081a4e8e1a508584071a9888cd42d74d383b",
+        "Topic01/tb/tbExtra/ripplyCarryAdderStruct_tb.v": "c4472e9c86d89e0a5e8aca328b46806b2d576db61ac136ab9e6b25a6202404d5"
+      }
+    },
+    {
+      "folder": "Topic03",
+      "id": "decoder3_8",
+      "simulation_top": "decoder3_8_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic03/rtl/decoder3_8.v": "e9173b7d9c80d8b00c2de0cc2a93292799b940bb63cde13927fe47fe4d08adc4",
+        "Topic03/tb/decoder3_8_tb.v": "4d6af29013b5eae94744248d89939fc3a3c8ffb124e05bc3724f2a6c98bbbbb0"
+      }
+    },
+    {
+      "folder": "Topic03",
+      "id": "priorityEnc",
+      "simulation_top": "priorityEnc_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic03/rtl/encoderPriority.v": "3ab5a5d94e15d1051b81dbfcb0f796529c1dbc6d01906c32bc35f9b11371bab8",
+        "Topic03/tb/encoderPriority_tb.v": "5cddda752e8646e7b7131e03c6b867a6f56696738162bb5d20c2736e2bd2033f"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "srLatch",
+      "simulation_top": "srLatch_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/latchSR.v": "5dd2381b1df8ea37c54f51884ade0470d8158a8e49cc42303196ffc9adfdff0d",
+        "Topic04/tb/srLatch_tb.v": "f7fe3739180c88dc6445107f2a6357ea45b57975168747086b25ffb0ad3fb8cc"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "jkFilpFlopParameter",
+      "simulation_top": "jkFilpFlopParameter_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/jkFlipFlopParameter.v": "45a2531947f69eeb1747beea79d3959348b8bc168de9bc1738c37cdcb648f6eb",
+        "Topic04/tb/jkFilpFlopParameter_tb.v": "16f0c43402bc15f4efbc5795659caea1f46e90eda05c33e2e11970d6b3c56da4"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "tffUsingDff",
+      "simulation_top": "tffUsingDff_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/tUsingDff.v": "d820bba648c2be2f2da1aae8a618a70f152964aa17400eccee61196bfc430d30",
+        "Topic04/tb/tffUsingDff_tb.v": "c8846317d633ce04f80277da578035451c63f887793f89e1a3f6c84f2f5805a6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "loadableUpCounter",
+      "simulation_top": "loadableUpCounter_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/loadableUpCounter.v": "848fd7a4ba9a315560b55d24edab46218bbd190d6625e6e76fb544b7df0c2819",
+        "Topic04/tb/loadableUpCounter_tb.v": "2e0f8bcb9d2135c1acd2d835e7e67d329d950a7caaa76c1fee1177d3387e8af6"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "mod12UpCounter",
+      "simulation_top": "mod12UpCounter_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/mod12UpCounter.v": "c9cb86d004e0683fbc68d2bf5fc462ffd2e0a319d9cc0a1838eb3f94504ffdde",
+        "Topic04/tb/mod12UpCounter_tb.v": "dd460c7338ddf3d1ec9e6aadb6b280750fe607a3e23ecb4208f392e34a3464d4"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "binaryUpDownCounter",
+      "simulation_top": "binaryUpDownCounter_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "testbench_diagnostics": "Topic04/tb/binaryUpDownCounter_tb.v:70: warning: Numeric constant truncated to 4 bits.\nTopic04/tb/binaryUpDownCounter_tb.v:71: warning: Numeric constant truncated to 4 bits.",
+      "source_sha256": {
+        "Topic04/rtl/binaryUpDownCounter.v": "74121ddf8738310e88e0c3693c0bc2879e26767878f7e2cb1a5d51379aa68cbf",
+        "Topic04/tb/binaryUpDownCounter_tb.v": "ef4d0c9b9a1d7acdc5ef705a8d772aef9759202a3a3ebcd497a7bd09074d7cc0"
+      }
+    },
+    {
+      "folder": "Topic04",
+      "id": "siso4bits",
+      "simulation_top": "siso4bits_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic04/rtl/siso.v": "1a37b28cbca903d111aea95fd266c0cbc10ab021c923d24a62b13006ac68efa1",
+        "Topic04/tb/siso_tb.v": "bcac3b1406cd4770274cf726e8a9475dfc574ef01b993f961efd36f3da14553e"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "asynchronousSinglePort",
+      "simulation_top": "asynchronousSinglePort_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "FAIL",
+      "testbench_diagnostics": "Topic05/tb/asynchronousSinglePort_tb.v:26: error: data is not a valid l-value in asynchronousSinglePort_tb.initialize.\nTopic05/tb/asynchronousSinglePort_tb.v:9:      : data is declared here as wire.\nTopic05/tb/asynchronousSinglePort_tb.v:17: error: Wrong number of ports. Expecting 4, got 6.\n2 error(s) during elaboration.",
+      "source_sha256": {
+        "Topic05/rtl/asynchronousSinglePort.v": "d6925117c917df501fc079fc51d821c87b1b27a2fb5994d3a1b6524861632a47",
+        "Topic05/tb/asynchronousSinglePort_tb.v": "c10f563f86a8e6085116c89e844025dac9de4a3174da479061d6bedf6e9afc53"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "dualPortRAM",
+      "simulation_top": "dualPortRAM_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic05/rtl/dualPortRam.v": "449ada8b6cb27502d4ef592be3c581ec2a0d1aba22faa61913f16a535b5c4bd3",
+        "Topic05/tb/dualPortRAM_tb.v": "089f37c7658ee344dfea66ff840d5ab11d5db72e45cc0b446d738afd9d82ef5b"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "asynchronousDualPortRAM",
+      "simulation_top": "asynchronousDualPortRAM_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic05/rtl/asynchronousDualPortRAM.v": "ea91711065f51517678976d08249e712b12d6a1e91df3fe6f84647a7d475648f",
+        "Topic05/tb/asynchronousDualPortRAM_tb.v": "12e28f2f42f14c8605093fb15ccf9501e7f1f379e188e3bac66797eaa6ad84e4"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "clockBuffer",
+      "simulation_top": "clockBuffer_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic05/rtl/clockBuffer.v": "174bca652e41111d2a4f10e6d3b8121ec2a25a0c2d465f60835f8a15ba5a692d",
+        "Topic05/tb/clockBuffer_tb.v": "b8bc67c3710954b99684cbf030cc2caad9185f371008fc462471590c46d983f3"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "fifo16x8_m1",
+      "simulation_top": "fifo16x8_m1_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "NO TB",
+      "source_sha256": {
+        "Topic05/rtl/fifo16x8_m1.v": "39263ccd8819407ec070b8137c1e27cb20d6c5cb7e7437fb2b0350b88df6690d"
+      }
+    },
+    {
+      "folder": "Topic05",
+      "id": "fifo16x8_m2",
+      "simulation_top": "fifo16x8_m2_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic05/rtl/fifo16x8_m2.v": "a21bf27675b7932d51a8d288967ab97fd8af76667fb6fd765c87967204e8286a",
+        "Topic05/tb/fifo16x8_m2_tb.v": "d29a68c7db104066099a315cdab14758731bf1e0d06e2ea10901677f624a6e73"
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "halfSubDataflow",
+      "simulation_top": "halfSubDataflow_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "ExtraPractice/CombinationalCircuits/rtl/halfSubDataflow.v": "8050f9a46270a14241b82c4cfbfb36f121051066ea89a6483b8c2fe8bffca468",
+        "ExtraPractice/CombinationalCircuits/tb/halfSubDataflow_tb.v": "e1ed9081a6eb9ad9e68cf2be2c3f72eef1706685086d2d932b62120e51414ac7"
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "fullSubUsingHalf",
+      "simulation_top": "fullSubUsingHalf_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "ExtraPractice/CombinationalCircuits/rtl/fullSubUsingHalf.v": "ed7d8fbf42a5f34d5f9348fdc719e7231a075eb90dce89339d136feacabb6e3d",
+        "ExtraPractice/CombinationalCircuits/tb/fullSubUsingHalf_tb.v": "6eeb71815f197b1c703dcca9af6d46ebf8b4f6f7e0f374cefbb52bc76e3d3430"
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "mux4to1",
+      "simulation_top": "mux4to1_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "ExtraPractice/CombinationalCircuits/rtl/muxQ3andQ4.v": "03b9ea728e2eaf910fc8cbb474064cf68f9861e0660576d0a3a2ebaa14985190",
+        "ExtraPractice/CombinationalCircuits/tb/muxQ3andQ4_tb.v": "25099ae77737524c8fe44ef7f84fb6cdc18ae2bd98eb7342ddab0477bec92110"
+      }
+    },
+    {
+      "folder": "ExtraPractice/CombinationalCircuits",
+      "id": "decoder2to4",
+      "simulation_top": "decoder2to4_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "ExtraPractice/CombinationalCircuits/rtl/decoderDataflow.v": "477ada8d7e8a05b590e8f1d0f7ae418b68b00276ecdb0fe8daa14ebed4219c6d",
+        "ExtraPractice/CombinationalCircuits/tb/decoderDataflow_tb.v": "80461444fded6430ad02db413442ed4c59f7c44e8bbfac122379496233ca8e67"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "full-adder-alternate-tb",
+      "simulation_top": "fullAdderUsingHalfAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "FAIL",
+      "testbench_diagnostics": "Topic01/tb/fullAdderUsingHalfAdder_tb.v:12: register ``i'' unknown in fullAdderUsingHalfAdder_tb.\nElaboration failed",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb",
+        "Topic01/tb/fullAdderUsingHalfAdder_tb.v": "1e52f399c171cd259f76643baec028d169c2ab030ae6588cc7b497ecd9f77530"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "half-adder-alternate-tb",
+      "simulation_top": "halfAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "FAIL",
+      "testbench_diagnostics": "Topic01/tb/tbExtra/halfAdder_tb.v:3: syntax error\nTopic01/tb/tbExtra/halfAdder_tb.v:3: error: invalid module item.",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
+        "Topic01/tb/tbExtra/halfAdder_tb.v": "6768112d11b4e32fddeee95f36fd7b9c784704a26f01e0b8183391709ec61fb5"
+      }
+    },
+    {
+      "folder": "Topic01",
+      "id": "structural-adder-alternate-tb",
+      "simulation_top": "rippleCarryAdder_tb",
+      "rtl_status": "PASS",
+      "testbench_status": "PASS",
+      "source_sha256": {
+        "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v": "6c4a2e2c3e9dde06eba18c5c86db081a4e8e1a508584071a9888cd42d74d383b",
+        "Topic01/tb/tbExtra/ripplyCarryAdderStruct.v": "d2254f0e5b43860b7614c7ec6564f806027533bb31577b45cd974b590ad25c63"
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+$date
+	Tue Nov 10 13:00:12 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module tffUsingDff_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # t $end
+$var wire 1 $ Q_out $end
+$var wire 1 % Qb_out $end
+
+$scope task din $end
+$var reg 1 & i $end
+$upscope $end
+
+$scope module dut $end
+$var wire 1 ' clk $end
+$var wire 1 ( rst $end
+$var wire 1 ) t $end
+$var wire 1 $ Q_out $end
+$var wire 1 % Qb_out $end
+$var wire 1 * w1 $end
+
+$scope module dut $end
+$var wire 1 ' clk $end
+$var wire 1 ( rst $end
+$var wire 1 * d $end
+$var reg 1 + Q_out $end
+$var wire 1 % Qb_out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+x"
+0#
+x+
+x&
+x$
+x%
+x*
+0)
+x(
+0'
+$end
+#10000
+1!
+1'
+#20000
+0!
+0'
+1"
+1(
+#30000
+1!
+1'
+0+
+1%
+0$
+0*
+#40000
+0!
+0'
+0"
+0&
+0(
+#50000
+1!
+1'
+#60000
+0!
+0'
+1&
+#70000
+1!
+1'
+#80000
+0!
+0'
+1#
+1)
+1*
+#90000
+1!
+1'
+1+
+0%
+1$
+0*
+#100000
+0!
+0'
+#110000
+1!
+1'
+0+
+1%
+0$
+1*
+#120000
+0!
+0'
+#130000
+1!
+1'
+1+
+0%
+1$
+0*
+#140000
+0!
+0'
+0&
+#150000
+1!
+1'
+0+
+1%
+0$
+1*
+#160000
+0!
+0'
+0#
+0)
+0*
+#170000
+1!
+1'
+#180000
+$dumpoff
+x!
+x"
+x#
+x+
+x&
+x$
+x%
+x*
+x)
+x(
+x'
+$end

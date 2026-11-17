@@ -1,0 +1,16 @@
+# Local planning instructions stay untouched and unpublished.
+/AboutThisRepo.txt
+/.work/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Generated tool work belongs outside the curated evidence folders.
+**/work/
+**/xsim.dir/
+**/.Xil/
+**/db/
+**/incremental_db/
+*.mpf
+transcript
