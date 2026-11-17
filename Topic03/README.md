@@ -1,6 +1,6 @@
 # Topic 3 - Combinational logic
 
-[All topics](../README.md) · [Import and evidence notes](../IMPORT.md)
+[All topics](../README.md) · [Import and evidence notes](../maintenance/IMPORT.md)
 
 ## What this topic practises
 

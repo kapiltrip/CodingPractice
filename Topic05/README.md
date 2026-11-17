@@ -1,6 +1,6 @@
 # Topic 5 - Memory logic
 
-[All topics](../README.md) · [Import and evidence notes](../IMPORT.md)
+[All topics](../README.md) · [Import and evidence notes](../maintenance/IMPORT.md)
 
 ## What this topic practises
 

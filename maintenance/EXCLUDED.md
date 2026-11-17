@@ -1,8 +1,10 @@
 # Excluded from the public repository
 
-[Repository index](README.md)
+[Repository index](../README.md) · [Maintenance](README.md)
 
 The public import includes the student's working code. Course-provided files were identified from the official archive's source manifest, the reference-code collection, and restricted-source headers in the working files.
+
+Checked the [Maven Silicon Verilog Labs lesson](https://elearn.maven-silicon.com/v3/myaccount/course/2383/lesson/2330?lesson=2330&section=275&class_id=17574&actualClassId=17574) in Edge on 17 November 2026. The course lists its lab archive and solutions for Labs 1–6. The saved official archive contains the full-adder, ALU, mux, DFF, RAM and sequence-detector templates/solutions. No public HDL file was byte-identical to an official archive source or contained its restricted-source header. The six working files listed below retain that header and remain excluded.
 
 ## Working files left private
 

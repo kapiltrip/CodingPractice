@@ -1,6 +1,6 @@
 # Import and evidence notes
 
-[Repository index](README.md) · [Exclusions](EXCLUDED.md) · [File manifest](records/import-manifest.json) · [Design records](records/designs.json) · [Current compile checks](records/validation.json)
+[Repository index](../README.md) · [Maintenance](README.md) · [Exclusions](EXCLUDED.md) · [File manifest](records/import-manifest.json) · [Design records](records/designs.json) · [Current compile checks](records/validation.json)
 
 Imported on 2026-11-17 from the local working tree of the private Verilog Maven Silicon workspace. The import uses fresh Git history and includes eligible current working files, including saved student edits that had not yet been committed in the source repository. The source workspace was read-only throughout.
 

@@ -1,6 +1,6 @@
 # Topic 6 - Finite-state machines
 
-[All topics](../README.md) · [Import and evidence notes](../IMPORT.md)
+[All topics](../README.md) · [Import and evidence notes](../maintenance/IMPORT.md)
 
 ## What this topic practises
 
@@ -10,4 +10,4 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 
 ## Current status
 
-No eligible student source or saved evidence is published for this topic yet. See [the exclusions](../EXCLUDED.md) for the course files left private.
+No eligible student source or saved evidence is published for this topic yet. See [the exclusions](../maintenance/EXCLUDED.md) for the course files left private.

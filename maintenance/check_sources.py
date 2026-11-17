@@ -17,7 +17,7 @@ def main() -> int:
     if not compiler:
         print("Icarus Verilog (iverilog) is required on PATH.", file=sys.stderr)
         return 2
-    catalog = json.loads((ROOT / "records/designs.json").read_text(encoding="utf-8"))
+    catalog = json.loads((ROOT / "maintenance/records/designs.json").read_text(encoding="utf-8"))
     version = subprocess.run([compiler, "-V"], text=True, capture_output=True).stdout.splitlines()[0]
     checks = []
     with tempfile.TemporaryDirectory(prefix="compile-", dir=ROOT / ".work") as temp:
@@ -44,7 +44,7 @@ def main() -> int:
             entry["source_sha256"] = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in files + ([item["testbench"]] if item["testbench"] else [])}
             checks.append(entry)
     out = {"tool": version, "scope": "RTL and saved TB compile/elaboration only; no functional simulation or synthesis rerun", "language_mode": "iverilog -g2012", "checks": checks}
-    target = ROOT / "records/validation.json"
+    target = ROOT / "maintenance/records/validation.json"
     target.write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8", newline="\n")
     failures = [(x["folder"], x["id"], stage) for x in checks for stage in ("rtl", "testbench") if x[stage + "_status"] == "FAIL"]
     print(f"Checked {len(checks)} source/TB entries. {len(failures)} compile failures are recorded; saved drafts are preserved.")
