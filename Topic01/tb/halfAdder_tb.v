@@ -4,8 +4,8 @@ module halfAdder_tb;
     wire cout,sum;
     halfAdder dut (a , b,cout , sum);
     initial begin
-        a=0 ;
-        b =0;
+        a= 0 ;
+        b =0 ;
     end
     integer i ; 
     

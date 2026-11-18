@@ -12,7 +12,7 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 
 | Subtopic | RTL check | Selected TB check | Saved evidence |
 |---|---|---|---|
-| [Parameterized asynchronous single-port RAM](designs/asynchronousSinglePort.md) | PASS | FAIL | Direct port stimulus and synthesis |
+| [Parameterized asynchronous single-port RAM](designs/asynchronousSinglePort.md) | PASS | PASS | Saved testbench and direct port stimulus waveforms, plus synthesis |
 | [Synchronous dual-port RAM](designs/dualPortRAM.md) | PASS | PASS | Saved testbench waveform and synthesis |
 | [Dual-clock RAM](designs/asynchronousDualPortRAM.md) | PASS | PASS | Saved testbench waveform and synthesis |
 | [Clock buffer](designs/clockBuffer.md) | PASS | PASS | Saved testbench waveform and synthesis |
@@ -23,4 +23,4 @@ The table shows Icarus Verilog compile and elaboration results. Quartus Analysis
 
 ## Reading the waveforms
 
-ModelSim drove the single-port RAM directly because its saved testbench fails to elaborate. The saved FIFO testbenches compile and stay in reset during the transfer attempts. To see both FIFOs operate at 16 entries of 8 bits, open the direct port stimulus waveforms. They show successful transfers, blocked requests at full and empty, and asynchronous reset during a run.
+The saved single-port RAM testbench waveform shows eight matching read-backs. The direct port stimulus also shows the shared bus released when both enables are high. The saved FIFO testbenches compile and stay in reset during the transfer attempts. To see both FIFOs operate at 16 entries of 8 bits, open the direct port stimulus waveforms. They show successful transfers, blocked requests at full and empty, and asynchronous reset during a run.

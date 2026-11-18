@@ -2,15 +2,11 @@
 
 [Topic index](../README.md) · [Alternate testbench](#alternate-testbench)
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles both testbenches. Each ModelSim trace matches the expected sum and carry for all eight input combinations. The selected testbench is in the tbExtra folder.
 
-Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified.
+![Full adder using half adders in the ModelSim Wave window](../waveforms/fullAdderUsingHalfAdder-waveform-current.png)
 
-The task runner selects the TB under tbExtra. This RTL file includes its own halfAdder module. The other saved TB with the same module name is retained as a separate draft.
-
-**Saved simulation waveform**
-
-![Full adder using half adders - saved simulation waveform](../waveforms/fullAdderUsingHalfAdder-waveform-original.png)
+[Selected testbench VCD](../waveforms/data/fullAdderUsingHalfAdder-current.vcd) · [Earlier waveform](../waveforms/fullAdderUsingHalfAdder-waveform-original.png)
 
 **Saved synthesis RTL schematic**
 
@@ -84,13 +80,18 @@ endmodule
 
 ### tb/fullAdderUsingHalfAdder_tb.v
 
-Compile/elaboration: **FAIL**. [Editable draft](../tb/fullAdderUsingHalfAdder_tb.v)
+The alternate testbench compiles and matches the expected sum and carry for all eight input combinations. [Editable draft](../tb/fullAdderUsingHalfAdder_tb.v)
+
+![Full adder using half adders from the alternate testbench](../waveforms/fullAdderUsingHalfAdder-waveform-alternate.png)
+
+[Alternate testbench VCD](../waveforms/data/fullAdderUsingHalfAdder-alternate.vcd)
 
 ```verilog
 `timescale 1ns/1ps
 module fullAdderUsingHalfAdder_tb ;
   reg x,y,cin;
   wire cout , sum ;
+  integer i ;
   fullAdderUsingHalfAdder dut (x,y,cin,cout,sum);
   initial begin
     x = 0;

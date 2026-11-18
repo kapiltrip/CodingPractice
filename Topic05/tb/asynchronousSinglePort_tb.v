@@ -6,7 +6,7 @@ module asynchronousSinglePort_tb ;
 
 parameter aw = 3 ; 
 parameter dw = 16; 
-wire data ; // since its a inout port , and we need to connect matching data type 
+wire [dw-1:0] data ; // since its a inout port , and we need to connect matching data type 
 
 
 integer i ; 
@@ -14,7 +14,7 @@ reg [dw-1:0] temporary_storage ;
 
 reg wr_en , rd_en ; 
 reg [aw-1:0] addr ; 
-asynchronousSinglePort dut (aw,dw,data,wr_en,rd_en,addr );
+asynchronousSinglePort #(aw,dw) dut (data,wr_en,rd_en,addr );
 //40.20
 // to test if reading is working 
 //rd_en = 1 wr_en =0 ; and address to read form 
@@ -23,7 +23,7 @@ task initialize();
   wr_en = 1'b0 ; 
   rd_en = 1'b0; 
   addr = 3'b000; 
-  data = 16'd0 ; 
+  temporary_storage = 16'd0 ; // trying to assign to a wire inside a task that reset will take care of ig 
 
 endtask 
 task write_memory();

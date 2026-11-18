@@ -1,7 +1,8 @@
 `timescale 1ns/1ps
 module fullAdderUsingHalfAdder_tb ;
   reg x,y,cin; 
-  wire cout , sum ; 
+  wire cout , sum ;
+  integer i ;  
   fullAdderUsingHalfAdder dut (x,y,cin,cout,sum);
   initial begin
     x = 0;

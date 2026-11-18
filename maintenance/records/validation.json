@@ -60,7 +60,7 @@
       "testbench_status": "PASS",
       "source_sha256": {
         "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
-        "Topic01/tb/halfAdder_tb.v": "bff65848a920c9929a7bb810a702b7d664700b98683615d128a6a4ab9cc8165b"
+        "Topic01/tb/halfAdder_tb.v": "ec329b5cfb4de1e12a3bc80135f5adef8242563250f774c3c65244751b6291a6"
       }
     },
     {
@@ -238,11 +238,10 @@
       "rtl_top": "asynchronousSinglePort",
       "simulation_top": "asynchronousSinglePort_tb",
       "rtl_status": "PASS",
-      "testbench_status": "FAIL",
-      "testbench_diagnostics": "Topic05/tb/asynchronousSinglePort_tb.v:26: error: data is not a valid l-value in asynchronousSinglePort_tb.initialize.\nTopic05/tb/asynchronousSinglePort_tb.v:9:      : data is declared here as wire.\nTopic05/tb/asynchronousSinglePort_tb.v:17: error: Wrong number of ports. Expecting 4, got 6.\n2 error(s) during elaboration.",
+      "testbench_status": "PASS",
       "source_sha256": {
         "Topic05/rtl/asynchronousSinglePort.v": "d6925117c917df501fc079fc51d821c87b1b27a2fb5994d3a1b6524861632a47",
-        "Topic05/tb/asynchronousSinglePort_tb.v": "c10f563f86a8e6085116c89e844025dac9de4a3174da479061d6bedf6e9afc53"
+        "Topic05/tb/asynchronousSinglePort_tb.v": "1a8588a0b7d330b15ab4f687c015180d7c7e46f7eb230c977495ee01c0afbe1b"
       }
     },
     {
@@ -359,11 +358,10 @@
       "rtl_top": "fullAdderUsingHalfAdder",
       "simulation_top": "fullAdderUsingHalfAdder_tb",
       "rtl_status": "PASS",
-      "testbench_status": "FAIL",
-      "testbench_diagnostics": "Topic01/tb/fullAdderUsingHalfAdder_tb.v:12: register ``i'' unknown in fullAdderUsingHalfAdder_tb.\nElaboration failed",
+      "testbench_status": "PASS",
       "source_sha256": {
         "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb",
-        "Topic01/tb/fullAdderUsingHalfAdder_tb.v": "1e52f399c171cd259f76643baec028d169c2ab030ae6588cc7b497ecd9f77530"
+        "Topic01/tb/fullAdderUsingHalfAdder_tb.v": "04648c5397d4d8e63a5c6a12f86dc5fd812f2e5bb57dae8cff6fb6ce1a794050"
       }
     },
     {
@@ -372,11 +370,10 @@
       "rtl_top": "halfAdder",
       "simulation_top": "halfAdder_tb",
       "rtl_status": "PASS",
-      "testbench_status": "FAIL",
-      "testbench_diagnostics": "Topic01/tb/tbExtra/halfAdder_tb.v:3: syntax error\nTopic01/tb/tbExtra/halfAdder_tb.v:3: error: invalid module item.",
+      "testbench_status": "PASS",
       "source_sha256": {
         "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
-        "Topic01/tb/tbExtra/halfAdder_tb.v": "6768112d11b4e32fddeee95f36fd7b9c784704a26f01e0b8183391709ec61fb5"
+        "Topic01/tb/tbExtra/halfAdder_tb.v": "4b42b461e8f2f84ce788577e41746454292f6875a137733617c136f7c581f048"
       }
     },
     {

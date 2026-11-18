@@ -1,5 +1,5 @@
 module halfAdder_tb ;
-   reg a ,b , 
+   reg a ,b ; 
    wire cout , sum ; 
    initial begin
     a =0; 

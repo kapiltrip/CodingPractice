@@ -1,0 +1,46 @@
+$date
+	Wed Nov 18 10:39:34 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module halfAdder_tb $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var wire 1 # cout $end
+$var wire 1 $ sum $end
+$var integer 32 % i $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b0 %
+z#
+z$
+$end
+#10000
+b1 %
+1"
+#20000
+b10 %
+0"
+1!
+#30000
+b11 %
+1"
+#40000
+b100 %
+#42000
+$dumpoff
+x!
+x"
+bx %
+x#
+x$
+$end

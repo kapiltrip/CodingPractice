@@ -18,6 +18,8 @@ Keep the six course topics in `Topic01` through `Topic06`. Use `ExtraPractice/<a
 | Waveform images and selected editable traces | `waveforms/` and `waveforms/data/` |
 | Synthesized RTL schematics | `synthesis/` |
 
+The private Verilog workspace is the editing source. When refreshing published HDL, use its original path in the [file manifest](records/import-manifest.json) to update the mapped copy, its hash, and the inline code from the saved source.
+
 The topic README is the index to update when adding a design. Existing `Examples.md` links still lead readers to the individual pages.
 
 ## Adding or updating a design
@@ -42,7 +44,7 @@ A focused check exits with status 1 if either compile fails. To refresh the full
 python maintenance/check_sources.py
 ```
 
-The full audit compiles and elaborates one pairing at a time and records each result. The [saved compile results](records/validation.json) include existing draft failures. Find functional simulation and synthesis results on the design pages, where the stimulus and source provenance are documented.
+The full audit compiles and elaborates one pairing at a time and records each result. The [saved compile results](records/validation.json) record each pairing's outcome and source hashes. Find functional simulation and synthesis results on the design pages, where the stimulus and source provenance are documented.
 
 ## Records
 

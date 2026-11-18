@@ -2,15 +2,11 @@
 
 [Topic index](../README.md) · [Alternate testbench](#alternate-testbench)
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+The selected testbench compiles. The ModelSim trace matches the expected sum and carry for all four input combinations.
 
-Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified.
+![Half adder in the ModelSim Wave window](../waveforms/halfAdder-waveform-current.png)
 
-The root TB is selected. The alternate tbExtra/halfAdder_tb.v is retained as an unfinished draft.
-
-**Saved simulation waveform**
-
-![Half adder - saved simulation waveform](../waveforms/halfAdder-waveform-original.png)
+[Selected testbench VCD](../waveforms/data/halfAdder-current.vcd) · [Earlier waveform](../waveforms/halfAdder-waveform-original.png)
 
 **Saved synthesis RTL schematic**
 
@@ -41,8 +37,8 @@ module halfAdder_tb;
     wire cout,sum;
     halfAdder dut (a , b,cout , sum);
     initial begin
-        a=0 ;
-        b =0;
+        a= 0 ;
+        b =0 ;
     end
     integer i ;
 
@@ -60,11 +56,15 @@ endmodule
 
 ### tb/tbExtra/halfAdder_tb.v
 
-Compile/elaboration: **FAIL**. [Editable draft](../tb/tbExtra/halfAdder_tb.v)
+The alternate testbench compiles and applies all four input combinations. With no half-adder instance, both output nets stay at `Z`. [Editable draft](../tb/tbExtra/halfAdder_tb.v)
+
+![Half adder from the alternate testbench](../waveforms/halfAdder-waveform-alternate.png)
+
+[Alternate testbench VCD](../waveforms/data/halfAdder-alternate.vcd)
 
 ```verilog
 module halfAdder_tb ;
-   reg a ,b ,
+   reg a ,b ;
    wire cout , sum ;
    initial begin
     a =0;

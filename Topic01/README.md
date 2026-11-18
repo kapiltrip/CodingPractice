@@ -15,8 +15,8 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 | [Bidirectional buffer](designs/bidirectionalBuffer.md) | PASS | PASS | Historical; see notes |
 | [2-to-4 dataflow decoder](designs/decoderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
 | [Dataflow full adder](designs/fullAdderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [Full adder using half adders](designs/fullAdderUsingHalfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [Half adder](designs/halfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [Full adder using half adders](designs/fullAdderUsingHalfAdder.md) | PASS | PASS | Current ModelSim testbench waveform and saved synthesis |
+| [Half adder](designs/halfAdder.md) | PASS | PASS | Current ModelSim testbench waveform and saved synthesis |
 | [4-to-1 mux using 2-to-1 muxes](designs/mux4to1.md) | PASS | PASS | Synthesis matches; waveform source unverified |
 | [4-to-1 mux using a decoder](designs/muxUsingdecoder.md) | PASS | PASS | Historical; see notes |
 | [Priority encoder](designs/priorityEncoder.md) | PASS | PASS | Synthesis matches; waveform source unverified |

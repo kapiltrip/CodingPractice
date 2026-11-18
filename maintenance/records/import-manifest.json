@@ -86,13 +86,13 @@
       "path": "Topic01/tb/fullAdderUsingHalfAdder_tb.v",
       "source_path": "Labs Verilog/Lab1/tb/fullAdderUsingHalfAdder_tb.v",
       "kind": "tb",
-      "sha256": "1e52f399c171cd259f76643baec028d169c2ab030ae6588cc7b497ecd9f77530"
+      "sha256": "04648c5397d4d8e63a5c6a12f86dc5fd812f2e5bb57dae8cff6fb6ce1a794050"
     },
     {
       "path": "Topic01/tb/halfAdder_tb.v",
       "source_path": "Labs Verilog/Lab1/tb/halfAdder_tb.v",
       "kind": "tb",
-      "sha256": "bff65848a920c9929a7bb810a702b7d664700b98683615d128a6a4ab9cc8165b"
+      "sha256": "ec329b5cfb4de1e12a3bc80135f5adef8242563250f774c3c65244751b6291a6"
     },
     {
       "path": "Topic01/tb/mux4to1_tb.v",
@@ -122,7 +122,7 @@
       "path": "Topic01/tb/tbExtra/halfAdder_tb.v",
       "source_path": "Labs Verilog/Lab1/tb/tbExtra/halfAdder_tb.v",
       "kind": "tb",
-      "sha256": "6768112d11b4e32fddeee95f36fd7b9c784704a26f01e0b8183391709ec61fb5"
+      "sha256": "4b42b461e8f2f84ce788577e41746454292f6875a137733617c136f7c581f048"
     },
     {
       "path": "Topic01/tb/tbExtra/priorityEncoder_tb.v",
@@ -296,7 +296,7 @@
       "path": "Topic05/tb/asynchronousSinglePort_tb.v",
       "source_path": "Labs Verilog/Lab5/tb/asynchronousSinglePort_tb.v",
       "kind": "tb",
-      "sha256": "c10f563f86a8e6085116c89e844025dac9de4a3174da479061d6bedf6e9afc53"
+      "sha256": "1a8588a0b7d330b15ab4f687c015180d7c7e46f7eb230c977495ee01c0afbe1b"
     },
     {
       "path": "Topic05/tb/clockBuffer_tb.v",
@@ -1077,6 +1077,66 @@
       "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m2-waveform-original.png",
       "kind": "waveforms",
       "sha256": "0df5871df1e229c37131283e803d9e61aea7ac60bd6e88735e8ca10a9468b2df"
+    },
+    {
+      "path": "Topic01/waveforms/data/fullAdderUsingHalfAdder-current.vcd",
+      "source_path": "Labs Verilog/Lab1/waveforms/data/fullAdderUsingHalfAdder-current.vcd",
+      "kind": "waveform-data",
+      "sha256": "fc14a42ef0307cf0426d567f2daac811f8fcc810025dedbdb3eea80aea15fc5a"
+    },
+    {
+      "path": "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-current.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/fullAdderUsingHalfAdder-waveform-current.png",
+      "kind": "waveforms",
+      "sha256": "dda2f5b3faecd5ebf1178e4569af4ca99a1759a0932c043ec76f95ca609b73a0"
+    },
+    {
+      "path": "Topic01/waveforms/data/fullAdderUsingHalfAdder-alternate.vcd",
+      "source_path": "Labs Verilog/Lab1/waveforms/data/fullAdderUsingHalfAdder-alternate.vcd",
+      "kind": "waveform-data",
+      "sha256": "b852acd5244790d315d1b11ef1684994b2bc160ab9d710780800cabc63aa0670"
+    },
+    {
+      "path": "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-alternate.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/fullAdderUsingHalfAdder-waveform-alternate.png",
+      "kind": "waveforms",
+      "sha256": "516ab097ad4a976180093071021377a4223ab70a89172c3a580427504ad8161e"
+    },
+    {
+      "path": "Topic01/waveforms/data/halfAdder-current.vcd",
+      "source_path": "Labs Verilog/Lab1/waveforms/data/halfAdder-current.vcd",
+      "kind": "waveform-data",
+      "sha256": "a8084e2022a1f11e1f551cf50de4e702cc53d2cb5350a6d540526fce5ce10a90"
+    },
+    {
+      "path": "Topic01/waveforms/halfAdder-waveform-current.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/halfAdder-waveform-current.png",
+      "kind": "waveforms",
+      "sha256": "a3c97404da4b9954fd742e10f44f2218452ad8fb49b3a717ab03255ecbc3b3eb"
+    },
+    {
+      "path": "Topic01/waveforms/data/halfAdder-alternate.vcd",
+      "source_path": "Labs Verilog/Lab1/waveforms/data/halfAdder-alternate.vcd",
+      "kind": "waveform-data",
+      "sha256": "9432a2edc59b657c58cf10925850e4f6ceb8d0f88d4b6979bc840dd58c7a2639"
+    },
+    {
+      "path": "Topic01/waveforms/halfAdder-waveform-alternate.png",
+      "source_path": "Labs Verilog/Lab1/waveforms/halfAdder-waveform-alternate.png",
+      "kind": "waveforms",
+      "sha256": "678df8661813c5d0e243e266cc63ee2600fa8e80dff666867964a5462bb69bd5"
+    },
+    {
+      "path": "Topic05/waveforms/data/asynchronousSinglePort-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/asynchronousSinglePort-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "a6f7a8c94b6978413ac919596e806d7808eaaf0b279689e257bb8ff17f60622b"
+    },
+    {
+      "path": "Topic05/waveforms/asynchronousSinglePort-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/asynchronousSinglePort-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "0cf947b56c890381422bd968e0c7601108a18eed7ca7b8a66565e32a2020513d"
     }
   ]
 }

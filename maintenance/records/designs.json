@@ -89,20 +89,41 @@
       "testbench": "Topic01/tb/tbExtra/fullAdderUsingHalfAdder_tb.v",
       "simulation_top": "fullAdderUsingHalfAdder_tb",
       "images": [
-        "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-original.png",
+        "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-current.png",
         "Topic01/synthesis/fullAdderUsingHalfAdder-rtl.png"
       ],
       "note": "The task runner selects the TB under tbExtra. This RTL file includes its own halfAdder module. The other saved TB with the same module name is retained as a separate draft.",
       "synthesis_source_matches": true,
-      "waveform_source_matches": null,
-      "evidence_source_matches": null,
-      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "ModelSim used the published RTL and selected testbench. The saved Quartus schematic uses the same RTL.",
       "saved_synthesis": {
         "status": "PASS",
         "family": "MAX II",
         "device": "EPM240T100C5",
         "logic_elements": "2"
-      }
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "language_mode": "Verilog-2001",
+          "end_time_ps": 85000,
+          "source_sha256": {
+            "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb",
+            "Topic01/tb/tbExtra/fullAdderUsingHalfAdder_tb.v": "1b0e242c5e352122c227e1c6efd51155e15f138f3698cdf7411652464079132d"
+          },
+          "status": "PASS",
+          "coverage": {
+            "input_combinations": 8,
+            "sum_and_carry_matches": 8
+          },
+          "images": [
+            "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-current.png"
+          ],
+          "vcd": "Topic01/waveforms/data/fullAdderUsingHalfAdder-current.vcd"
+        }
+      ]
     },
     {
       "folder": "Topic01",
@@ -115,20 +136,41 @@
       "testbench": "Topic01/tb/halfAdder_tb.v",
       "simulation_top": "halfAdder_tb",
       "images": [
-        "Topic01/waveforms/halfAdder-waveform-original.png",
+        "Topic01/waveforms/halfAdder-waveform-current.png",
         "Topic01/synthesis/halfAdder-rtl.png"
       ],
       "note": "The root TB is selected. The alternate tbExtra/halfAdder_tb.v is retained as an unfinished draft.",
       "synthesis_source_matches": true,
-      "waveform_source_matches": null,
-      "evidence_source_matches": null,
-      "evidence_status": "Synthesis provenance: saved RTL/TB hashes match the imported source. Waveform provenance: the saved waveform-export record has no RTL/TB hashes, so current-source equality is unverified",
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "ModelSim used the published RTL and selected testbench. The saved Quartus schematic uses the same RTL.",
       "saved_synthesis": {
         "status": "PASS",
         "family": "MAX II",
         "device": "EPM240T100C5",
         "logic_elements": "2"
-      }
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "language_mode": "Verilog-2001",
+          "end_time_ps": 42000,
+          "source_sha256": {
+            "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
+            "Topic01/tb/halfAdder_tb.v": "ec329b5cfb4de1e12a3bc80135f5adef8242563250f774c3c65244751b6291a6"
+          },
+          "status": "PASS",
+          "coverage": {
+            "input_combinations": 4,
+            "sum_and_carry_matches": 4
+          },
+          "images": [
+            "Topic01/waveforms/halfAdder-waveform-current.png"
+          ],
+          "vcd": "Topic01/waveforms/data/halfAdder-current.vcd"
+        }
+      ]
     },
     {
       "folder": "Topic01",
@@ -539,11 +581,12 @@
       "testbench": "Topic05/tb/asynchronousSinglePort_tb.v",
       "simulation_top": "asynchronousSinglePort_tb",
       "images": [
+        "Topic05/waveforms/asynchronousSinglePort-waveform-original.png",
         "Topic05/waveforms/asynchronousSinglePort-waveform-direct.png",
         "Topic05/synthesis/asynchronousSinglePort-rtl.png"
       ],
-      "note": "The saved testbench fails to elaborate. The waveform uses direct ModelSim stimulus on the RTL's default eight entries of 16 bits. The exercise calls for 16 entries of 8 bits.",
-      "evidence_status": "Quartus used the published RTL. ModelSim drove the RTL ports directly because the saved testbench fails to elaborate.",
+      "note": "The saved testbench writes and reads back eight 16-bit words. The earlier direct port stimulus also exercises simultaneous enables.",
+      "evidence_status": "ModelSim used the published RTL and selected testbench. The saved Quartus schematic uses the same RTL.",
       "evidence_source_matches": true,
       "synthesis_source_matches": true,
       "waveform_source_matches": true,
@@ -554,6 +597,26 @@
         "warnings_count": 0
       },
       "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "language_mode": "SystemVerilog",
+          "end_time_ps": 180000,
+          "source_sha256": {
+            "Topic05/rtl/asynchronousSinglePort.v": "d6925117c917df501fc079fc51d821c87b1b27a2fb5994d3a1b6524861632a47",
+            "Topic05/tb/asynchronousSinglePort_tb.v": "1a8588a0b7d330b15ab4f687c015180d7c7e46f7eb230c977495ee01c0afbe1b"
+          },
+          "status": "PASS",
+          "coverage": {
+            "writes": 8,
+            "matching_read_backs": 8,
+            "idle_bus_high_impedance": true
+          },
+          "images": [
+            "Topic05/waveforms/asynchronousSinglePort-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/asynchronousSinglePort-original.vcd"
+        },
         {
           "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
           "stimulus": "direct_rtl_stimulus",
@@ -941,7 +1004,28 @@
         "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v"
       ],
       "testbench": "Topic01/tb/fullAdderUsingHalfAdder_tb.v",
-      "simulation_top": "fullAdderUsingHalfAdder_tb"
+      "simulation_top": "fullAdderUsingHalfAdder_tb",
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "alternate_tb",
+          "language_mode": "Verilog-2001",
+          "end_time_ps": 85000,
+          "source_sha256": {
+            "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v": "6211821c505d1ebf9127d96b16029ed2fc816d5c031fd8e9f7269fef55bb6afb",
+            "Topic01/tb/fullAdderUsingHalfAdder_tb.v": "04648c5397d4d8e63a5c6a12f86dc5fd812f2e5bb57dae8cff6fb6ce1a794050"
+          },
+          "status": "PASS",
+          "coverage": {
+            "input_combinations": 8,
+            "sum_and_carry_matches": 8
+          },
+          "images": [
+            "Topic01/waveforms/fullAdderUsingHalfAdder-waveform-alternate.png"
+          ],
+          "vcd": "Topic01/waveforms/data/fullAdderUsingHalfAdder-alternate.vcd"
+        }
+      ]
     },
     {
       "folder": "Topic01",
@@ -951,7 +1035,28 @@
         "Topic01/rtl/rtlExtra/halfAdder.v"
       ],
       "testbench": "Topic01/tb/tbExtra/halfAdder_tb.v",
-      "simulation_top": "halfAdder_tb"
+      "simulation_top": "halfAdder_tb",
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "alternate_tb",
+          "language_mode": "Verilog-2001",
+          "end_time_ps": 42000,
+          "source_sha256": {
+            "Topic01/rtl/rtlExtra/halfAdder.v": "db771d989de72e288cf65753fde067d85c7620eb69304bc468ce51dcd34b8067",
+            "Topic01/tb/tbExtra/halfAdder_tb.v": "4b42b461e8f2f84ce788577e41746454292f6875a137733617c136f7c581f048"
+          },
+          "status": "UNDRIVEN",
+          "coverage": {
+            "input_combinations": 4,
+            "output_pairs_high_impedance": 4
+          },
+          "images": [
+            "Topic01/waveforms/halfAdder-waveform-alternate.png"
+          ],
+          "vcd": "Topic01/waveforms/data/halfAdder-alternate.vcd"
+        }
+      ]
     },
     {
       "folder": "Topic01",

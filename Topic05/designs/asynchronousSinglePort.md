@@ -2,19 +2,17 @@
 
 [Topic index](../README.md)
 
-Icarus Verilog compiles the RTL. The saved testbench fails to elaborate.
+Icarus Verilog compiles the RTL and testbench. ModelSim compiled the saved testbench in SystemVerilog mode. The Wave window shows eight writes followed by eight matching reads, with the bus at high impedance before the first write.
 
-ModelSim drove the RTL ports directly. The trace shows eight words written and read back at the default configuration, eight entries of 16 bits. The bus releases in idle and when both enables are high. The course exercise calls for 16 entries of 8 bits.
+The testbench uses eight 16-bit entries. During reading, the RAM drives the shared bus and the testbench releases it.
 
-**ModelSim waveform (direct port stimulus)**
+![ModelSim Wave window for the saved single-port RAM testbench](../waveforms/asynchronousSinglePort-waveform-original.png)
 
-![Parameterized asynchronous single-port RAM waveform from direct port stimulus](../waveforms/asynchronousSinglePort-waveform-direct.png)
+The earlier direct port stimulus also exercises simultaneous read and write enables. [Saved testbench VCD](../waveforms/data/asynchronousSinglePort-original.vcd) · [Direct waveform](../waveforms/asynchronousSinglePort-waveform-direct.png) · [Direct VCD](../waveforms/data/asynchronousSinglePort-direct.vcd) · [Direct WLF](../waveforms/data/asynchronousSinglePort-direct.wlf)
 
 **Quartus RTL schematic**
 
 ![Parameterized asynchronous single-port RAM Quartus RTL schematic](../synthesis/asynchronousSinglePort-rtl.png)
-
-[Direct port stimulus VCD](../waveforms/data/asynchronousSinglePort-direct.vcd) · [Direct port stimulus WLF](../waveforms/data/asynchronousSinglePort-direct.wlf)
 
 ## RTL: asynchronousSinglePort.v
 
@@ -58,7 +56,7 @@ module asynchronousSinglePort_tb ;
 
 parameter aw = 3 ;
 parameter dw = 16;
-wire data ; // since its a inout port , and we need to connect matching data type
+wire [dw-1:0] data ; // since its a inout port , and we need to connect matching data type
 
 
 integer i ;
@@ -66,7 +64,7 @@ reg [dw-1:0] temporary_storage ;
 
 reg wr_en , rd_en ;
 reg [aw-1:0] addr ;
-asynchronousSinglePort dut (aw,dw,data,wr_en,rd_en,addr );
+asynchronousSinglePort #(aw,dw) dut (data,wr_en,rd_en,addr );
 //40.20
 // to test if reading is working
 //rd_en = 1 wr_en =0 ; and address to read form
@@ -75,7 +73,7 @@ task initialize();
   wr_en = 1'b0 ;
   rd_en = 1'b0;
   addr = 3'b000;
-  data = 16'd0 ;
+  temporary_storage = 16'd0 ; // trying to assign to a wire inside a task that reset will take care of ig
 
 endtask
 task write_memory();
@@ -135,13 +133,4 @@ assign data = (wr_en && !rd_en ) ? temporary_storage : 16'bz;
 
 // i will drive the data line when wr_en is active
 endmodule
-```
-
-## Current compiler diagnostic
-
-```text
-Topic05/tb/asynchronousSinglePort_tb.v:26: error: data is not a valid l-value in asynchronousSinglePort_tb.initialize.
-Topic05/tb/asynchronousSinglePort_tb.v:9:      : data is declared here as wire.
-Topic05/tb/asynchronousSinglePort_tb.v:17: error: Wrong number of ports. Expecting 4, got 6.
-2 error(s) during elaboration.
 ```
