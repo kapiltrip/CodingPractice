@@ -17,6 +17,6 @@ With Python 3 and Icarus Verilog installed, run from the repository root:
 python maintenance/check_sources.py
 ```
 
-The checker compiles each RTL/TB pairing separately and writes `maintenance/records/validation.json`. Compilation does not establish functional correctness. The saved audit includes three unfinished TB failures: the asynchronous single-port RAM TB and two alternate Topic 1 TB drafts. FIFO M1 has no saved TB; FIFO M2's earlier stimulus configuration is described in its topic page.
+The checker compiles and elaborates each RTL and testbench pairing separately. It writes `maintenance/records/validation.json`. The asynchronous single-port RAM testbench and two alternate Topic 1 testbenches still fail the compile checks. Both FIFO testbenches compile. Their reset and parameter limitations are shown beside the saved waveforms in [Topic 5](../Topic05/README.md#reading-the-waveforms).
 
 Kapil writes the RTL and TBs. Codex assists with daily repository upkeep as work is added. The six course-topic folders stay in place; testbench levels and a random revision tracker are reserved for a later format discussion.

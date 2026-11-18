@@ -1,0 +1,651 @@
+$date
+	Tue Nov 17 13:51:13 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module dualPortRAM_tb $end
+$var parameter 32 ! aw $end
+$var parameter 32 " dw $end
+$var parameter 32 # period $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$var reg 4 & wr_addr [3:0] $end
+$var reg 4 ' rd_addr [3:0] $end
+$var reg 1 ( wr_en $end
+$var reg 1 ) rd_en $end
+$var reg 8 * data_in [7:0] $end
+$var wire 1 + data_out [7] $end
+$var wire 1 , data_out [6] $end
+$var wire 1 - data_out [5] $end
+$var wire 1 . data_out [4] $end
+$var wire 1 / data_out [3] $end
+$var wire 1 0 data_out [2] $end
+$var wire 1 1 data_out [1] $end
+$var wire 1 2 data_out [0] $end
+$var reg 8 3 captured_data [7:0] $end
+
+$scope task writeInput $end
+$var reg 1 4 write_enable $end
+$var reg 4 5 write_address [3:0] $end
+$var reg 8 6 write_data [7:0] $end
+$var reg 1 7 read_enable $end
+$upscope $end
+
+$scope task readInput $end
+$var reg 1 8 read_enable $end
+$var reg 4 9 read_address [3:0] $end
+$var reg 8 : read_data [7:0] $end
+$var reg 1 ; write_enable $end
+$upscope $end
+
+$scope module dut $end
+$var parameter 32 < aw $end
+$var parameter 32 = dw $end
+$var parameter 32 > depth $end
+$var wire 1 ? clk $end
+$var wire 1 @ rst $end
+$var wire 1 A wr_addr [3] $end
+$var wire 1 B wr_addr [2] $end
+$var wire 1 C wr_addr [1] $end
+$var wire 1 D wr_addr [0] $end
+$var wire 1 E rd_addr [3] $end
+$var wire 1 F rd_addr [2] $end
+$var wire 1 G rd_addr [1] $end
+$var wire 1 H rd_addr [0] $end
+$var wire 1 I data_in [7] $end
+$var wire 1 J data_in [6] $end
+$var wire 1 K data_in [5] $end
+$var wire 1 L data_in [4] $end
+$var wire 1 M data_in [3] $end
+$var wire 1 N data_in [2] $end
+$var wire 1 O data_in [1] $end
+$var wire 1 P data_in [0] $end
+$var wire 1 Q wr_en $end
+$var wire 1 R rd_en $end
+$var reg 8 S data_out [7:0] $end
+$var integer 32 T i $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0%
+b0 &
+b0 '
+0(
+0)
+b0 *
+bx S
+x4
+bx 5
+bx 6
+x7
+bx 3
+x8
+bx 9
+bx :
+x;
+b100 !
+b1000 "
+b1010 #
+b100 <
+b1000 =
+b10000 >
+bx T
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0R
+0Q
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+$end
+#5000
+1$
+1?
+#10000
+0$
+0?
+1%
+1@
+#15000
+1$
+1?
+b0 T
+b1 T
+b10 T
+b11 T
+b100 T
+b101 T
+b110 T
+b111 T
+b1000 T
+b1001 T
+b1010 T
+b1011 T
+b1100 T
+b1101 T
+b1110 T
+b1111 T
+b10000 T
+b0 S
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+#20000
+0$
+0?
+0%
+14
+b100 5
+b10000001 6
+07
+0@
+#25000
+1$
+1?
+#30000
+0$
+0?
+1(
+b100 &
+b10000001 *
+b1001 5
+b1100011 6
+1Q
+1P
+1I
+1B
+#35000
+1$
+1?
+#40000
+0$
+0?
+b1001 &
+b1100011 *
+b1101 5
+b10001101 6
+1O
+1K
+1J
+0I
+1D
+0B
+1A
+#45000
+1$
+1?
+#50000
+0$
+0?
+b1101 &
+b10001101 *
+b101 5
+b10010 6
+0O
+1N
+1M
+0K
+0J
+1I
+1B
+#55000
+1$
+1?
+#60000
+0$
+0?
+b101 &
+b10010 *
+b1 5
+b1101 6
+0P
+1O
+0N
+0M
+1L
+0I
+0A
+#65000
+1$
+1?
+#70000
+0$
+0?
+b1 &
+b1101 *
+b110 5
+b111101 6
+1P
+0O
+1N
+1M
+0L
+0B
+#75000
+1$
+1?
+#80000
+0$
+0?
+b110 &
+b111101 *
+b1101 5
+b10001100 6
+1L
+1K
+0D
+1C
+1B
+#85000
+1$
+1?
+#90000
+0$
+0?
+b1101 &
+b10001100 *
+b1001 5
+b11000110 6
+0P
+0L
+0K
+1I
+1D
+0C
+1A
+#95000
+1$
+1?
+#100000
+0$
+0?
+b1001 &
+b11000110 *
+b101 5
+b10101010 6
+1O
+0M
+1J
+0B
+#105000
+1$
+1?
+#110000
+0$
+0?
+b101 &
+b10101010 *
+b1110111 6
+0N
+1M
+1K
+0J
+1B
+0A
+#115000
+1$
+1?
+#120000
+0$
+0?
+b1110111 *
+18
+b10 9
+0;
+1P
+1N
+0M
+1L
+1J
+0I
+#125000
+1$
+1?
+#130000
+0$
+0?
+1)
+b10 '
+0(
+1R
+1G
+0Q
+#135000
+1$
+1?
+#136000
+b0 :
+b0 3
+b1111 9
+#140000
+0$
+0?
+b1111 '
+1H
+1F
+1E
+#145000
+1$
+1?
+#146000
+b10 9
+#150000
+0$
+0?
+b10 '
+0H
+0F
+0E
+#155000
+1$
+1?
+#156000
+b1110 9
+#160000
+0$
+0?
+b1110 '
+1F
+1E
+#165000
+1$
+1?
+#166000
+b1000 9
+#170000
+0$
+0?
+b1000 '
+0G
+0F
+#175000
+1$
+1?
+#176000
+b101 9
+#180000
+0$
+0?
+b101 '
+1H
+1F
+0E
+#185000
+1$
+1?
+b1110111 S
+12
+11
+10
+1.
+1-
+1,
+#186000
+b1110111 :
+b1110111 3
+b1100 9
+#190000
+0$
+0?
+b1100 '
+0H
+1E
+#195000
+1$
+1?
+b0 S
+02
+01
+00
+0.
+0-
+0,
+#196000
+b0 :
+b0 3
+b1101 9
+#200000
+0$
+0?
+b1101 '
+1H
+#205000
+1$
+1?
+b10001100 S
+10
+1/
+1+
+#206000
+b10001100 :
+b10001100 3
+#210000
+0$
+0?
+#215000
+1$
+1?
+#216000
+b101 9
+#220000
+0$
+0?
+b101 '
+0E
+#225000
+1$
+1?
+b1110111 S
+12
+11
+0/
+1.
+1-
+1,
+0+
+#226000
+b1110111 :
+b1110111 3
+#230000
+0$
+0?
+#235000
+1$
+1?
+#240000
+0$
+0?
+#245000
+1$
+1?
+#250000
+0$
+0?
+#255000
+1$
+1?
+#260000
+0$
+0?
+#265000
+1$
+1?
+#270000
+0$
+0?
+#275000
+1$
+1?
+#280000
+0$
+0?
+#285000
+1$
+1?
+#290000
+0$
+0?
+#295000
+1$
+1?
+#300000
+0$
+0?
+#305000
+1$
+1?
+#310000
+0$
+0?
+#315000
+1$
+1?
+#320000
+0$
+0?
+#325000
+1$
+1?
+#330000
+0$
+0?
+#335000
+1$
+1?
+#340000
+0$
+0?
+#345000
+1$
+1?
+#350000
+0$
+0?
+#355000
+1$
+1?
+#360000
+0$
+0?
+#365000
+1$
+1?
+#370000
+0$
+0?
+#375000
+1$
+1?
+#380000
+0$
+0?
+#385000
+1$
+1?
+#390000
+0$
+0?
+#395000
+1$
+1?
+#400000
+0$
+0?
+#405000
+1$
+1?
+#410000
+0$
+0?
+#415000
+1$
+1?
+#420000
+0$
+0?
+#425000
+1$
+1?
+#426000
+$dumpoff
+x$
+x%
+bx &
+bx '
+x(
+x)
+bx *
+bx S
+x4
+bx 5
+bx 6
+x7
+bx 3
+x8
+bx 9
+bx :
+x;
+bx T
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+xP
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xR
+xQ
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+$end

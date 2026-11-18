@@ -2,7 +2,7 @@
   "imported_on": "2026-11-17",
   "source_repository": "https://github.com/kapiltrip/Verilog-Maven-Silicon",
   "history": "Fresh public repository; no private Git history imported",
-  "copy_method": "Byte-for-byte copies; SHA-256 verified",
+  "copy_method": "SHA-256 verified byte copies and clipped Quartus PDF renders",
   "files": [
     {
       "path": "Topic01/rtl/bidirectionalBuffer.v",
@@ -600,27 +600,39 @@
     },
     {
       "path": "Topic04/waveforms/loadableUpCounter-waveform.png",
-      "source_path": "Labs Verilog/Lab4/waveforms/loadableUpCounter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/loadableUpCounter-waveform-original.png",
       "kind": "waveforms",
-      "sha256": "6b97776458b6273f1a0c22318b0b604007998f7801973ce69a86a42ab7e15fe6"
+      "sha256": "69f15e4d1dd4fa30aa4af8118d76ea1075bae6e6e0b6354873eaed636d36146d"
     },
     {
       "path": "Topic04/synthesis/loadableUpCounter-rtl.png",
-      "source_path": "Labs Verilog/Lab4/synthesis/loadableUpCounter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/data/loadableUpCounter-rtl.pdf",
       "kind": "synthesis",
-      "sha256": "2a64c00ccf58317e6a873e489f80b1e3e8a2684b83a9b45aa2ea11796d0506fe"
+      "sha256": "77e88d158ef63c8bb3aafad913ab8c0c4f0ccb167f532e0f092b8bfb9472194f",
+      "source_sha256": "834ea843345489ae97be39f9d552dd282c932c7845c85551ea4930cf204f7cf5",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          179,
+          2034,
+          3307,
+          696
+        ]
+      }
     },
     {
       "path": "Topic04/waveforms/data/loadableUpCounter-verification.vcd",
-      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-original.vcd",
       "kind": "waveform-data",
-      "sha256": "5d8373b4d4ee99fe38eb5e38966061ee8567bcb000ed1e04092d5cc9a8a2fdd2"
+      "sha256": "5f8ca09775425bab63a3a3f2b5898cc212f85602b8e05e548f150fa9c9f56965"
     },
     {
       "path": "Topic04/waveforms/data/loadableUpCounter-verification.wlf",
-      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/loadableUpCounter-original.wlf",
       "kind": "waveform-data",
-      "sha256": "2a47ee04af0075e31029a1b8ee85bb713a011ba3813d53193c6d608f5930465f"
+      "sha256": "49403002de98196a094fdc272f3f1b9b7501b839418e6fb0732200fcb92da097"
     },
     {
       "path": "Topic04/waveforms/mod12UpCounter-waveform.png",
@@ -660,27 +672,39 @@
     },
     {
       "path": "Topic04/waveforms/binaryUpDownCounter-waveform.png",
-      "source_path": "Labs Verilog/Lab4/waveforms/binaryUpDownCounter-waveform.png",
+      "source_path": "Labs Verilog/Lab4/waveforms/binaryUpDownCounter-waveform-original.png",
       "kind": "waveforms",
-      "sha256": "63ad08d6b043b6b4d8c9b6db30e912707aa87e5d22b908ece715b59c8c3c03ef"
+      "sha256": "3c8ffe858eeb78a12376ada91d0003eac2df63a735800b0c48849e00f62afd64"
     },
     {
       "path": "Topic04/synthesis/binaryUpDownCounter-rtl.png",
-      "source_path": "Labs Verilog/Lab4/synthesis/binaryUpDownCounter-rtl.png",
+      "source_path": "Labs Verilog/Lab4/synthesis/data/binaryUpDownCounter-rtl.pdf",
       "kind": "synthesis",
-      "sha256": "ee60d04e0abd9bc50236615ad3149dbf31b933cedd092d238d62c7b5075d2de9"
+      "sha256": "4b28447284b25b164b7de1e4e0720e25e7f987adc687e23b44d40eb85d5f3995",
+      "source_sha256": "640e73e5362290b49b5d92531f30dd08a0fcebbc3beb27e61a2582077b76639e",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          163,
+          1732,
+          3342,
+          1298
+        ]
+      }
     },
     {
       "path": "Topic04/waveforms/data/binaryUpDownCounter-verification.vcd",
-      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-verification.vcd",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-original.vcd",
       "kind": "waveform-data",
-      "sha256": "8808fdafd1708bd7bc17a594446a5306709a0f9b44f9f087e6e125d0a5ff5829"
+      "sha256": "711a3468d50d5334dab944087a3c7c7db0b35053d30c4fd55b6ba106b5d7c98e"
     },
     {
       "path": "Topic04/waveforms/data/binaryUpDownCounter-verification.wlf",
-      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-verification.wlf",
+      "source_path": "Labs Verilog/Lab4/waveforms/data/binaryUpDownCounter-original.wlf",
       "kind": "waveform-data",
-      "sha256": "126df1592af1da52defb420d82d02b3531b96ffe676a9042bbeba6b703f1009a"
+      "sha256": "4850814332e24dc67672fee2b66ee79bec06acb7dcc86d1471887b3a107b00d6"
     },
     {
       "path": "Topic04/waveforms/siso4bits-waveform.png",
@@ -771,6 +795,288 @@
       "source_path": "Labs Verilog/Assignments/Assignment1/synthesis/decoder2to4-rtl.png",
       "kind": "synthesis",
       "sha256": "2af4b5af07663f8f3cdb65d87d3424577cc41554ac7a96fea5279f13cd62fa6e"
+    },
+    {
+      "path": "Topic05/tb/fifo16x8_m1_tb.v",
+      "source_path": "Labs Verilog/Lab5/tb/fifo16x8_m1_tb.v",
+      "kind": "tb",
+      "sha256": "8625293e1d74919bd7a20ee530be204107540a9eaeba6b0cd0694966b9c6860b"
+    },
+    {
+      "path": "Topic05/synthesis/asynchronousSinglePort-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/asynchronousSinglePort-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "8322a4c8d915478cc6c85cdbce71d73db7646359806221659b3c370152a21fc8",
+      "source_sha256": "4ecee6304e5c55936ea4909b0fc7100f868ae1a80605eb8a258f74fa54300df0",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          191,
+          1964,
+          3284,
+          858
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/asynchronousSinglePort-direct.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/asynchronousSinglePort-direct.vcd",
+      "kind": "waveform-data",
+      "sha256": "f05bb208998e8e26eb3f24b46b90fbd22799ef00280f733f349ba43a7c988d67"
+    },
+    {
+      "path": "Topic05/waveforms/data/asynchronousSinglePort-direct.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/asynchronousSinglePort-direct.wlf",
+      "kind": "waveform-data",
+      "sha256": "d740843d60a1e9ca0df06a52830000dc1e2e850f8a59e1c10bad8af8ce13758b"
+    },
+    {
+      "path": "Topic05/waveforms/asynchronousSinglePort-waveform-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/asynchronousSinglePort-waveform-direct.png",
+      "kind": "waveforms",
+      "sha256": "2d6d3bff80dd4a500364fbb004dc0c7a37d090f5aa37393e7474e2189daf4d77"
+    },
+    {
+      "path": "Topic05/synthesis/dualPortRAM-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/dualPortRAM-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "3618cc4e88c72c1235f01cf68c11343b28c2fd04bea028efbeb9a9970051d9e2",
+      "source_sha256": "7daeedc9943392277972f9ce02452ba12bb29a660092b61d386913ab466f83e4",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          143,
+          1196,
+          3383,
+          2367
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/dualPortRAM-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/dualPortRAM-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "2e570992e69867a36934458f8c6ff2299639855ceb8ed82ecb02927c9bc6904f"
+    },
+    {
+      "path": "Topic05/waveforms/data/dualPortRAM-original.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/dualPortRAM-original.wlf",
+      "kind": "waveform-data",
+      "sha256": "e9edf13c7c59ea8bf7bc9abddc57809355c3e45414a3f05ec1205ed7edd5c75d"
+    },
+    {
+      "path": "Topic05/waveforms/dualPortRAM-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/dualPortRAM-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "7bb809a191cdeaa812d28069d0ef33797f772a6ff8d64d7a9d7acdbf790a0f51"
+    },
+    {
+      "path": "Topic05/synthesis/asynchronousDualPortRAM-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/asynchronousDualPortRAM-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "362208cc7674c4b01df02a4d32f795d6817a6e4b5020e881718fb345362e1ae1",
+      "source_sha256": "58e96fe3263a491a77f7040f2d62561bc27d3d47cd44b1e06c1bbd386a34fd51",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          167,
+          704,
+          3335,
+          3330
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/asynchronousDualPortRAM-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/asynchronousDualPortRAM-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "7f43d8bd70d3a867977f960b357fd98638c97a535ae9522e4f5c11d4169631ea"
+    },
+    {
+      "path": "Topic05/waveforms/data/asynchronousDualPortRAM-original.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/asynchronousDualPortRAM-original.wlf",
+      "kind": "waveform-data",
+      "sha256": "374915e5365197e1edca589288bacfdc1541f8635fd2939a94fad5416f08505e"
+    },
+    {
+      "path": "Topic05/waveforms/asynchronousDualPortRAM-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/asynchronousDualPortRAM-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "da4832f0c109ac6c97ed42f70db46f0be1d72f911aab628a35812864467825d9"
+    },
+    {
+      "path": "Topic05/synthesis/clockBuffer-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/clockBuffer-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "a07cb2f0a53dba77225623358573faa768f14ddf49d6710fd9ad5ec148ded178",
+      "source_sha256": "ba20abb8947499a2b55d0b7d141b09ae91a333b32fc6666daa0475ea0a0c3e83",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          256,
+          2157,
+          3154,
+          571
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/clockBuffer-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/clockBuffer-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "4c763fc89891efe18736c9567b06bbeecb426130892c92da30aaa706ebcd3f6c"
+    },
+    {
+      "path": "Topic05/waveforms/data/clockBuffer-original.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/clockBuffer-original.wlf",
+      "kind": "waveform-data",
+      "sha256": "d3ae65fd297081683e57977d4da8bbfe2ef88ceed02cc1388788e34f06ed6a1d"
+    },
+    {
+      "path": "Topic05/waveforms/clockBuffer-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/clockBuffer-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "d6175251189700a60994e45057ad9208e5d74bb1218ae0e74013feb7d4d4b86d"
+    },
+    {
+      "path": "Topic05/synthesis/fifo16x8_m1-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/fifo16x8_m1-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "b274299a81188261eaacf8a23e0a4d9729cdb440217bd9a61f8f5ba5fe195f1e",
+      "source_sha256": "fdb42f47ff13b1d50924b39a6f6ea516001557db232db9a51867075af2660ef4",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          398,
+          135,
+          2873,
+          4486
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m1-direct.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m1-direct.vcd",
+      "kind": "waveform-data",
+      "sha256": "6612690c522716af258e888d88478efc7a54f22f7e399404b689e84e4688743c"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m1-direct.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m1-direct.wlf",
+      "kind": "waveform-data",
+      "sha256": "491238dd5b58737c67cd9402cd0d5036c043446798002108159a70bb22743541"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m1-waveform-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m1-waveform-direct.png",
+      "kind": "waveforms",
+      "sha256": "a37b15edbafa167ac77f04815ea75932d1ed62a3fb2e08b619ee4dfbaac3d51c"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m1-boundaries-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m1-boundaries-direct.png",
+      "kind": "waveforms",
+      "sha256": "7193bdaa8dfd5526a021487f578e0a90fd5fc6a93bae9ff7fa8e53357f2838a9"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m1-reset-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m1-reset-direct.png",
+      "kind": "waveforms",
+      "sha256": "cecc45d244d79cef6fdf21ceb887185dd9804ee829e4c41ebf8ed513571c64fe"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m1-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m1-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "6b1d09d91f73b5d3fb197189b48e8f12772605d60716aa40ac618be9290662bf"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m1-original.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m1-original.wlf",
+      "kind": "waveform-data",
+      "sha256": "92a2f5b9601838fbedbd92fab08a87647600d38543395f5812193bbeedbdc1e7"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m1-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m1-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "5893133564ca512b58d3700b9a927c36c4d5a424bd36da9d09675e33994a9f24"
+    },
+    {
+      "path": "Topic05/synthesis/fifo16x8_m2-rtl.png",
+      "source_path": "Labs Verilog/Lab5/synthesis/data/fifo16x8_m2-rtl.pdf",
+      "kind": "synthesis",
+      "sha256": "c09056cf9bd330ee9039673bd602cf6c3fe36f1579e390bf06939873a49983a7",
+      "source_sha256": "1d4c672dd31340790605072179ad9581fb1b95540f7a304f0e3ba9480d7d9c25",
+      "render": {
+        "renderer": "PyMuPDF",
+        "page": 1,
+        "dpi": 432,
+        "clip_pixels_xywh": [
+          229,
+          137,
+          3210,
+          4478
+        ]
+      }
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m2-direct.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m2-direct.vcd",
+      "kind": "waveform-data",
+      "sha256": "664823d742733350dec1c948dbdf884717abafe59144581b18d9b16e340f37cf"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m2-direct.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m2-direct.wlf",
+      "kind": "waveform-data",
+      "sha256": "cb141b961d88ebf6d285aa8b318e2576d084185a118277df781cd7b32528c874"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m2-waveform-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m2-waveform-direct.png",
+      "kind": "waveforms",
+      "sha256": "1bb087635b93fd9f9b88fea63c5b22d43e55613affb648232c35c73c45c8790f"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m2-boundaries-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m2-boundaries-direct.png",
+      "kind": "waveforms",
+      "sha256": "cc927a67103327b97c37f9e16cd5bd6e6233e5dd2be05f48b1735a6a7cc05999"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m2-reset-direct.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m2-reset-direct.png",
+      "kind": "waveforms",
+      "sha256": "f21b5acd8044e0cbf8de0c7eb0813163554c5acafb8abe65171a6f0dba54bc45"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m2-original.vcd",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m2-original.vcd",
+      "kind": "waveform-data",
+      "sha256": "e9356a3499fb3db85680f418fc1d42fb4c553622f40c87bdab154efce97c6a4e"
+    },
+    {
+      "path": "Topic05/waveforms/data/fifo16x8_m2-original.wlf",
+      "source_path": "Labs Verilog/Lab5/waveforms/data/fifo16x8_m2-original.wlf",
+      "kind": "waveform-data",
+      "sha256": "402fb599bf439310082959103ded7a1d1773ccef815de8a5538532e59e1730ee"
+    },
+    {
+      "path": "Topic05/waveforms/fifo16x8_m2-waveform-original.png",
+      "source_path": "Labs Verilog/Lab5/waveforms/fifo16x8_m2-waveform-original.png",
+      "kind": "waveforms",
+      "sha256": "0df5871df1e229c37131283e803d9e61aea7ac60bd6e88735e8ca10a9468b2df"
     }
   ]
 }

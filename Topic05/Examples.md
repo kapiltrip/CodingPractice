@@ -8,11 +8,19 @@
 
 ## Parameterized asynchronous single-port RAM
 
-RTL compilation: **PASS**. Selected testbench: **FAIL**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL. The saved testbench fails to elaborate.
 
-No saved waveform or synthesis exports.
+ModelSim drove the RTL ports directly. The trace shows eight words written and read back at the default configuration, eight entries of 16 bits. The bus releases in idle and when both enables are high. The course exercise calls for 16 entries of 8 bits.
 
-The saved TB has interface/declaration errors. It is preserved as a draft.
+**ModelSim waveform (direct port stimulus)**
+
+![Parameterized asynchronous single-port RAM waveform from direct port stimulus](waveforms/asynchronousSinglePort-waveform-direct.png)
+
+**Quartus RTL schematic**
+
+![Parameterized asynchronous single-port RAM Quartus RTL schematic](synthesis/asynchronousSinglePort-rtl.png)
+
+[Direct port stimulus VCD](waveforms/data/asynchronousSinglePort-direct.vcd) · [Direct port stimulus WLF](waveforms/data/asynchronousSinglePort-direct.wlf)
 
 ### RTL: asynchronousSinglePort.v
 
@@ -148,9 +156,19 @@ Topic05/tb/asynchronousSinglePort_tb.v:17: error: Wrong number of ports. Expecti
 
 ## Synchronous dual-port RAM
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-No saved waveform or synthesis exports.
+The saved testbench resets the memory and uses separate random addresses for writes and reads. A read can return the reset value of an unwritten address.
+
+**ModelSim waveform (saved testbench)**
+
+![Synchronous dual-port RAM waveform from saved testbench](waveforms/dualPortRAM-waveform-original.png)
+
+**Quartus RTL schematic**
+
+![Synchronous dual-port RAM Quartus RTL schematic](synthesis/dualPortRAM-rtl.png)
+
+[Saved testbench VCD](waveforms/data/dualPortRAM-original.vcd) · [Saved testbench WLF](waveforms/data/dualPortRAM-original.wlf)
 
 ### RTL: dualPortRam.v
 
@@ -311,9 +329,19 @@ endmodule
 
 ## Dual-clock RAM
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-No saved waveform or synthesis exports.
+The saved testbench uses a 20 ns write clock and a 40 ns read clock. The read port samples on the rising edge of its own clock.
+
+**ModelSim waveform (saved testbench)**
+
+![Dual-clock RAM waveform from saved testbench](waveforms/asynchronousDualPortRAM-waveform-original.png)
+
+**Quartus RTL schematic**
+
+![Dual-clock RAM Quartus RTL schematic](synthesis/asynchronousDualPortRAM-rtl.png)
+
+[Saved testbench VCD](waveforms/data/asynchronousDualPortRAM-original.vcd) · [Saved testbench WLF](waveforms/data/asynchronousDualPortRAM-original.wlf)
 
 ### RTL: asynchronousDualPortRAM.v
 
@@ -478,11 +506,19 @@ endmodule
 
 ## Clock buffer
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-No saved waveform or synthesis exports.
+The free-running testbench reports matching phase and period. ModelSim captures the first 100 ns using a 1 ns time unit.
 
-This TB has a free-running clock and no finish statement; use a bounded simulator run.
+**ModelSim waveform (saved testbench)**
+
+![Clock buffer waveform from saved testbench](waveforms/clockBuffer-waveform-original.png)
+
+**Quartus RTL schematic**
+
+![Clock buffer Quartus RTL schematic](synthesis/clockBuffer-rtl.png)
+
+[Saved testbench VCD](waveforms/data/clockBuffer-original.vcd) · [Saved testbench WLF](waveforms/data/clockBuffer-original.wlf)
 
 ### RTL: clockBuffer.v
 
@@ -559,11 +595,34 @@ endmodule
 
 ## FIFO using an occupancy counter
 
-RTL compilation: **PASS**. Selected testbench: **NO TB**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-No saved waveform or synthesis exports.
+M1 uses a copy of the M2 testbench with the testbench and DUT module names changed. The saved testbench selects eight entries of 16 bits and holds active-low reset during the transfer attempts.
 
-RTL draft only: there is no saved M1 testbench.
+The direct port run uses the default 16 entries of 8 bits. It records 27 accepted writes, 23 accepted reads and 5 simultaneous transfers. With both requests high, the design accepts only the read at full and only the write at empty.
+
+**ModelSim waveform (direct port stimulus)**
+
+![FIFO using an occupancy counter waveform from direct port stimulus](waveforms/fifo16x8_m1-waveform-direct.png)
+
+**Quartus RTL schematic**
+
+![FIFO using an occupancy counter Quartus RTL schematic](synthesis/fifo16x8_m1-rtl.png)
+
+[Direct port stimulus VCD](waveforms/data/fifo16x8_m1-direct.vcd) · [Direct port stimulus WLF](waveforms/data/fifo16x8_m1-direct.wlf)
+
+<details>
+<summary>Full boundary, asynchronous reset and saved testbench views</summary>
+
+![FIFO using an occupancy counter full boundary and simultaneous transfers](waveforms/fifo16x8_m1-boundaries-direct.png)
+
+![FIFO using an occupancy counter asynchronous reset during direct stimulus](waveforms/fifo16x8_m1-reset-direct.png)
+
+![FIFO using an occupancy counter saved testbench waveform with reset held](waveforms/fifo16x8_m1-waveform-original.png)
+
+[Saved testbench VCD](waveforms/data/fifo16x8_m1-original.vcd) · [Saved testbench WLF](waveforms/data/fifo16x8_m1-original.wlf)
+
+</details>
 
 ### RTL: fifo16x8_m1.v
 
@@ -657,15 +716,114 @@ endmodule
 //
 ```
 
+### Testbench: fifo16x8_m1_tb.v
+
+[Editable testbench](tb/fifo16x8_m1_tb.v) · Simulation top: `fifo16x8_m1_tb`
+
+```verilog
+`timescale 1ns / 1ps
+module fifo16x8_m1_tb;
+  parameter aw = 3;
+  parameter dw= 16;
+  reg clk , rst ;
+  reg [dw-1:0] data_in ;
+  reg wr_en , rd_en ;
+  wire [dw-1:0] data_out ;
+  wire full , empty ;
+fifo16x8_m1 #(aw,dw) dut (clk,rst,wr_en,rd_en,data_in,data_out , full, empty) ;
+// generate a clock pulse
+// activate the reset
+parameter cycle = 20 ;
+task initializeDut();  // will be called at time 0
+  begin
+    clk = 1'b0 ;
+    rst = 1'b0 ;
+    wr_en = 1'b0 ;
+    rd_en = 1'b0 ;
+    data_in = {dw{1'b0}} ;
+
+  end
+endtask
+always #(cycle/2) clk= ~clk ;
+task reset_dut();
+  begin
+    @(negedge clk );
+    rst= 1'b1 ;
+    @(negedge clk );
+    rst = 1'b0 ;
+
+  end
+endtask
+// task for writing in the memory location
+task write_inFifo(input [dw-1:0] dataInput ) ;
+  begin
+    @(negedge clk );
+    wr_en = 1'b1  ;
+    data_in =dataInput;
+    @(negedge clk );
+    wr_en = 1'b0 ;
+  end
+endtask
+// task to read from memory
+task read_FromFifo();
+  begin
+    @(negedge clk );
+    rd_en = 1'b1  ;
+    @(negedge clk );
+    rd_en = 1'b0 ;
+  end
+endtask
+initial begin
+    initializeDut ;
+    #50;
+    reset_dut;
+    repeat (17) begin
+        write_inFifo({$random} % 8 ) ; // mod 8 cause i want to write 8 bits of data , i.e 0 to 7
+
+    end
+    repeat (17) // will read 16 time depth is 16 not 17 time , ite gonna be empty
+      read_FromFifo() ;
+    repeat (17)
+     write_inFifo({$random} % 8 ) ;
+    #100;
+    $finish;
+
+end
+endmodule
+```
+
 <a id="fifo16x8_m2"></a>
 
 ## FIFO using extended pointers
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-No saved waveform or synthesis exports.
+The saved testbench selects eight entries of 16 bits and holds active-low reset during the transfer attempts. The design uses an extra pointer bit to distinguish equal addresses at full and empty.
 
-The saved TB still uses the earlier width settings and active-high reset stimulus; the current RTL uses active-low rst_n. Compilation alone does not establish correct stimulus.
+The direct port run uses the default 16 entries of 8 bits. It records 27 accepted writes, 23 accepted reads and 5 simultaneous transfers. With both requests high, the design accepts only the read at full and only the write at empty.
+
+**ModelSim waveform (direct port stimulus)**
+
+![FIFO using extended pointers waveform from direct port stimulus](waveforms/fifo16x8_m2-waveform-direct.png)
+
+**Quartus RTL schematic**
+
+![FIFO using extended pointers Quartus RTL schematic](synthesis/fifo16x8_m2-rtl.png)
+
+[Direct port stimulus VCD](waveforms/data/fifo16x8_m2-direct.vcd) · [Direct port stimulus WLF](waveforms/data/fifo16x8_m2-direct.wlf)
+
+<details>
+<summary>Full boundary, asynchronous reset and saved testbench views</summary>
+
+![FIFO using extended pointers full boundary and simultaneous transfers](waveforms/fifo16x8_m2-boundaries-direct.png)
+
+![FIFO using extended pointers asynchronous reset during direct stimulus](waveforms/fifo16x8_m2-reset-direct.png)
+
+![FIFO using extended pointers saved testbench waveform with reset held](waveforms/fifo16x8_m2-waveform-original.png)
+
+[Saved testbench VCD](waveforms/data/fifo16x8_m2-original.vcd) · [Saved testbench WLF](waveforms/data/fifo16x8_m2-original.wlf)
+
+</details>
 
 ### RTL: fifo16x8_m2.v
 

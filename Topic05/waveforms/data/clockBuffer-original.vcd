@@ -1,0 +1,101 @@
+$date
+	Tue Nov 17 13:52:17 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module clockBuffer_tb $end
+$var reg 1 ! clk_in $end
+$var wire 1 " clk_out $end
+$var reg 1 # p $end
+$var reg 1 $ f $end
+$var time 64 % t1 $end
+$var time 64 & t2 $end
+$var time 64 ' t3 $end
+$var time 64 ( t4 $end
+$var time 64 ) t5 $end
+$var time 64 * t6 $end
+
+$scope module dut $end
+$var wire 1 + clk_in $end
+$var wire 1 " clk_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+x#
+x$
+bx %
+bx &
+bx '
+bx (
+bx )
+bx *
+0"
+0+
+$end
+#10000
+1!
+1+
+1"
+b1010 %
+b1010 &
+#20000
+0!
+0+
+0"
+#30000
+1!
+1+
+1"
+b11110 '
+b11110 (
+b10100 )
+b10100 *
+#40000
+0!
+0+
+0"
+#50000
+1!
+1+
+1"
+#60000
+0!
+0+
+0"
+#70000
+1!
+1+
+1"
+#80000
+0!
+0+
+0"
+#90000
+1!
+1+
+1"
+#100000
+0!
+0+
+0"
+$dumpoff
+x!
+x#
+x$
+bx %
+bx &
+bx '
+bx (
+bx )
+bx *
+x"
+x+
+$end

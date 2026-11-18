@@ -15,9 +15,9 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 | [Gate-level SR latch](Examples.md#srlatch) | PASS | PASS | Source hashes match |
 | [JK flip-flop with named operations](Examples.md#jkfilpflopparameter) | PASS | PASS | Source hashes match |
 | [T flip-flop using a D flip-flop](Examples.md#tffusingdff) | PASS | PASS | Source hashes match |
-| [Loadable binary up counter](Examples.md#loadableupcounter) | PASS | PASS | Historical; see notes |
+| [Loadable binary up counter](Examples.md#loadableupcounter) | PASS | PASS | Current ModelSim waveform and Quartus schematic |
 | [Loadable MOD-12 up counter](Examples.md#mod12upcounter) | PASS | PASS | Source hashes match |
-| [Loadable binary up-down counter](Examples.md#binaryupdowncounter) | PASS | PASS | Historical; see notes |
+| [Loadable binary up-down counter](Examples.md#binaryupdowncounter) | PASS | PASS | Current ModelSim waveform and Quartus schematic |
 | [Four-bit SISO right-shift register](Examples.md#siso4bits) | PASS | PASS | Source hashes match |
 
 [Open the code, testbenches, waveform images and synthesis schematics](Examples.md). All HDL files preserve their original bytes. The checks above compile/elaborate the saved files; they do not establish functional correctness.

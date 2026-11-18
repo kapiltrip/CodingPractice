@@ -276,19 +276,19 @@ endmodule
 
 ## Loadable binary up counter
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB.
+The testbench asserts synchronous reset high, loads decimal 13 and runs through four-bit wraparound. Its local reset signal is named `resetn`.
 
-One or more saved exports use older source. The provenance notes above identify the affected kind. Re-run the current RTL and TB before using those exports as evidence of today's behavior.
+**ModelSim waveform (saved testbench)**
 
-**Saved simulation waveform**
+![Loadable binary up counter waveform from saved testbench](waveforms/loadableUpCounter-waveform.png)
 
-![Loadable binary up counter - saved simulation waveform](waveforms/loadableUpCounter-waveform.png)
+**Quartus RTL schematic**
 
-**Saved synthesis RTL schematic**
+![Loadable binary up counter Quartus RTL schematic](synthesis/loadableUpCounter-rtl.png)
 
-![Loadable binary up counter - saved synthesis rtl schematic](synthesis/loadableUpCounter-rtl.png)
+[Saved testbench VCD](waveforms/data/loadableUpCounter-verification.vcd) · [Saved testbench WLF](waveforms/data/loadableUpCounter-verification.wlf)
 
 ### RTL: loadableUpCounter.v
 
@@ -528,19 +528,19 @@ endmodule
 
 ## Loadable binary up-down counter
 
-RTL compilation: **PASS**. Selected testbench: **PASS**. These are compile/elaboration checks, not functional simulation results.
+Icarus Verilog compiles the RTL and the saved testbench.
 
-Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB.
+The testbench loads a value and exercises both count directions. Its four-bit literal `4'd22` truncates to 6. The final load stays asserted and holds decimal 12.
 
-One or more saved exports use older source. The provenance notes above identify the affected kind. Re-run the current RTL and TB before using those exports as evidence of today's behavior.
+**ModelSim waveform (saved testbench)**
 
-**Saved simulation waveform**
+![Loadable binary up-down counter waveform from saved testbench](waveforms/binaryUpDownCounter-waveform.png)
 
-![Loadable binary up-down counter - saved simulation waveform](waveforms/binaryUpDownCounter-waveform.png)
+**Quartus RTL schematic**
 
-**Saved synthesis RTL schematic**
+![Loadable binary up-down counter Quartus RTL schematic](synthesis/binaryUpDownCounter-rtl.png)
 
-![Loadable binary up-down counter - saved synthesis rtl schematic](synthesis/binaryUpDownCounter-rtl.png)
+[Saved testbench VCD](waveforms/data/binaryUpDownCounter-verification.vcd) · [Saved testbench WLF](waveforms/data/binaryUpDownCounter-verification.wlf)
 
 ### RTL: binaryUpDownCounter.v
 

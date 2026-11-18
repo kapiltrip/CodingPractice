@@ -1,0 +1,762 @@
+$date
+	Tue Nov 17 13:51:47 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module asynchronousDualPortRAM_tb $end
+$var parameter 32 ! aw $end
+$var parameter 32 " dw $end
+$var reg 1 # wr_clk $end
+$var reg 1 $ rd_clk $end
+$var reg 1 % clr $end
+$var reg 3 & rd_addr [2:0] $end
+$var reg 3 ' wr_addr [2:0] $end
+$var reg 16 ( data_in [15:0] $end
+$var reg 1 ) wr_en $end
+$var reg 1 * rd_en $end
+$var wire 1 + data_out [15] $end
+$var wire 1 , data_out [14] $end
+$var wire 1 - data_out [13] $end
+$var wire 1 . data_out [12] $end
+$var wire 1 / data_out [11] $end
+$var wire 1 0 data_out [10] $end
+$var wire 1 1 data_out [9] $end
+$var wire 1 2 data_out [8] $end
+$var wire 1 3 data_out [7] $end
+$var wire 1 4 data_out [6] $end
+$var wire 1 5 data_out [5] $end
+$var wire 1 6 data_out [4] $end
+$var wire 1 7 data_out [3] $end
+$var wire 1 8 data_out [2] $end
+$var wire 1 9 data_out [1] $end
+$var wire 1 : data_out [0] $end
+$var reg 16 ; output_value [15:0] $end
+$var integer 32 < i $end
+$var integer 32 = j $end
+
+$scope task write_memory $end
+$var reg 3 > write_address [2:0] $end
+$var reg 1 ? write_enable $end
+$var reg 1 @ read_enable $end
+$var reg 16 A data_input [15:0] $end
+$upscope $end
+
+$scope task read_memory $end
+$var reg 3 B read_address [2:0] $end
+$var reg 1 C read_enable $end
+$var reg 1 D write_enable $end
+$var reg 16 E read_value [15:0] $end
+$upscope $end
+
+$scope module dut $end
+$var parameter 32 F aw $end
+$var parameter 32 G dw $end
+$var parameter 32 H depth $end
+$var wire 1 I wr_clk $end
+$var wire 1 J rd_clk $end
+$var wire 1 K wr_addr [2] $end
+$var wire 1 L wr_addr [1] $end
+$var wire 1 M wr_addr [0] $end
+$var wire 1 N rd_addr [2] $end
+$var wire 1 O rd_addr [1] $end
+$var wire 1 P rd_addr [0] $end
+$var wire 1 Q data_in [15] $end
+$var wire 1 R data_in [14] $end
+$var wire 1 S data_in [13] $end
+$var wire 1 T data_in [12] $end
+$var wire 1 U data_in [11] $end
+$var wire 1 V data_in [10] $end
+$var wire 1 W data_in [9] $end
+$var wire 1 X data_in [8] $end
+$var wire 1 Y data_in [7] $end
+$var wire 1 Z data_in [6] $end
+$var wire 1 [ data_in [5] $end
+$var wire 1 \ data_in [4] $end
+$var wire 1 ] data_in [3] $end
+$var wire 1 ^ data_in [2] $end
+$var wire 1 _ data_in [1] $end
+$var wire 1 ` data_in [0] $end
+$var wire 1 a wr_en $end
+$var wire 1 b rd_en $end
+$var wire 1 c clr $end
+$var reg 16 d data_out [15:0] $end
+$var integer 32 e i $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0$
+1%
+b0 &
+b0 '
+bx (
+0)
+0*
+bx ;
+b0 d
+bx >
+x?
+x@
+bx A
+bx B
+xC
+xD
+bx E
+b11 !
+b10000 "
+b11 F
+b10000 G
+b1000 H
+b1000 e
+bx <
+bx =
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0b
+0a
+x`
+x_
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+0M
+0L
+0K
+0P
+0O
+0N
+1c
+0J
+0I
+$end
+#10000
+1#
+1I
+b0 e
+b1 e
+b10 e
+b11 e
+b100 e
+b101 e
+b110 e
+b111 e
+b1000 e
+#20000
+1$
+0#
+1J
+0I
+#30000
+1#
+1I
+b0 e
+b1 e
+b10 e
+b11 e
+b100 e
+b101 e
+b110 e
+b111 e
+b1000 e
+#40000
+0$
+0#
+0J
+0I
+#50000
+0%
+b100 >
+1?
+0@
+b1 A
+1#
+0c
+1I
+#60000
+1$
+0#
+1J
+0I
+b100 '
+1)
+b1 (
+1a
+1`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+1K
+#70000
+1#
+1I
+#71000
+b1 >
+b11 A
+#80000
+0$
+0#
+0J
+0I
+b1 '
+b11 (
+1_
+1M
+0K
+#90000
+1#
+1I
+#91000
+b101 >
+b1101 A
+#100000
+1$
+0#
+1J
+0I
+b101 '
+b1101 (
+0_
+1^
+1]
+1K
+#110000
+1#
+1I
+#111000
+b10 A
+#120000
+0$
+0#
+0J
+0I
+b10 (
+0`
+1_
+0^
+0]
+#130000
+1#
+1I
+#131000
+b1 >
+b1101 A
+#140000
+1$
+0#
+1J
+0I
+b1 '
+b1101 (
+1`
+0_
+1^
+1]
+0K
+#150000
+1#
+1I
+#151000
+b110 >
+#160000
+0$
+0#
+0J
+0I
+b110 '
+0M
+1L
+1K
+#170000
+1#
+1I
+#171000
+b101 >
+b1100 A
+#180000
+1$
+0#
+1J
+0I
+b101 '
+b1100 (
+0`
+1M
+0L
+#190000
+1#
+1I
+#191000
+b1 >
+b110 A
+#200000
+0$
+0#
+0J
+0I
+b1 '
+b110 (
+1_
+0]
+0K
+#210000
+1#
+1I
+#211000
+b101 >
+b1010 A
+#220000
+1$
+0#
+1J
+0I
+b101 '
+b1010 (
+0^
+1]
+1K
+#230000
+1#
+1I
+#231000
+b111 A
+#240000
+0$
+0#
+0J
+0I
+b111 (
+1`
+1^
+0]
+#250000
+1#
+1I
+#251000
+b10 B
+1C
+0D
+#260000
+1$
+0#
+1J
+0I
+#270000
+1#
+1I
+#280000
+0$
+0#
+0J
+0I
+b10 &
+1*
+0)
+1O
+1b
+0a
+#290000
+1#
+1I
+#300000
+1$
+0#
+1J
+0I
+#301000
+b0 E
+b0 ;
+b111 B
+#310000
+1#
+1I
+#320000
+0$
+0#
+0J
+0I
+b111 &
+1P
+1N
+#330000
+1#
+1I
+#340000
+1$
+0#
+1J
+0I
+#341000
+b10 B
+#350000
+1#
+1I
+#360000
+0$
+0#
+0J
+0I
+b10 &
+0P
+0N
+#370000
+1#
+1I
+#380000
+1$
+0#
+1J
+0I
+#381000
+b110 B
+#390000
+1#
+1I
+#400000
+0$
+0#
+0J
+0I
+b110 &
+1N
+#410000
+1#
+1I
+#420000
+1$
+0#
+1J
+0I
+b1101 d
+1:
+18
+17
+#421000
+b1101 E
+b1101 ;
+b0 B
+#430000
+1#
+1I
+#440000
+0$
+0#
+0J
+0I
+b0 &
+0O
+0N
+#450000
+1#
+1I
+#460000
+1$
+0#
+1J
+0I
+b0 d
+0:
+08
+07
+#461000
+b0 E
+b0 ;
+b101 B
+#470000
+1#
+1I
+#480000
+0$
+0#
+0J
+0I
+b101 &
+1P
+1N
+#490000
+1#
+1I
+#500000
+1$
+0#
+1J
+0I
+b111 d
+1:
+19
+18
+#501000
+b111 E
+b111 ;
+b100 B
+#510000
+1#
+1I
+#520000
+0$
+0#
+0J
+0I
+b100 &
+0P
+#530000
+1#
+1I
+#540000
+1$
+0#
+1J
+0I
+b1 d
+09
+08
+#541000
+b1 E
+b1 ;
+b101 B
+#550000
+1#
+1I
+#560000
+0$
+0#
+0J
+0I
+b101 &
+1P
+#570000
+1#
+1I
+#580000
+1$
+0#
+1J
+0I
+b111 d
+19
+18
+#581000
+b111 E
+b111 ;
+#590000
+1#
+1I
+#600000
+0$
+0#
+0J
+0I
+#610000
+1#
+1I
+#620000
+1$
+0#
+1J
+0I
+#630000
+1#
+1I
+#640000
+0$
+0#
+0J
+0I
+#650000
+1#
+1I
+#660000
+1$
+0#
+1J
+0I
+#670000
+1#
+1I
+#680000
+0$
+0#
+0J
+0I
+#690000
+1#
+1I
+#700000
+1$
+0#
+1J
+0I
+#710000
+1#
+1I
+#720000
+0$
+0#
+0J
+0I
+#730000
+1#
+1I
+#740000
+1$
+0#
+1J
+0I
+#750000
+1#
+1I
+#760000
+0$
+0#
+0J
+0I
+#770000
+1#
+1I
+#780000
+1$
+0#
+1J
+0I
+#790000
+1#
+1I
+#800000
+0$
+0#
+0J
+0I
+#810000
+1#
+1I
+#820000
+1$
+0#
+1J
+0I
+#830000
+1#
+1I
+#840000
+0$
+0#
+0J
+0I
+#850000
+1#
+1I
+#860000
+1$
+0#
+1J
+0I
+#861000
+$dumpoff
+x#
+x$
+x%
+bx &
+bx '
+bx (
+x)
+x*
+bx ;
+bx d
+bx >
+x?
+x@
+bx A
+bx B
+xC
+xD
+bx E
+bx e
+bx <
+bx =
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+xb
+xa
+x`
+x_
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xM
+xL
+xK
+xP
+xO
+xN
+xc
+xJ
+xI
+$end

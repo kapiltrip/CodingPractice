@@ -384,16 +384,36 @@
         "Topic04/waveforms/loadableUpCounter-waveform.png",
         "Topic04/synthesis/loadableUpCounter-rtl.png"
       ],
-      "note": "",
-      "synthesis_source_matches": false,
-      "waveform_source_matches": false,
-      "evidence_source_matches": false,
-      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB",
+      "note": "The saved testbench asserts synchronous reset high, loads decimal 13 and runs through four-bit wraparound. Its local reset signal is named resetn.",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "The Quartus RTL and ModelSim RTL/testbench hashes match the published source.",
       "saved_synthesis": {
         "status": "PASS",
         "family": "Cyclone IV E",
-        "device": "EP4CE22F17C6"
-      }
+        "device": "EP4CE22F17C6",
+        "warnings_count": 0
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 330000,
+          "trace_comparisons_passed": 64,
+          "coverage": {
+            "reset_edges": 1,
+            "count_edges": 30,
+            "load_edges": 1,
+            "rollover_or_recovery": 2
+          },
+          "images": [
+            "Topic04/waveforms/loadableUpCounter-waveform.png"
+          ],
+          "vcd": "Topic04/waveforms/data/loadableUpCounter-verification.vcd",
+          "wlf": "Topic04/waveforms/data/loadableUpCounter-verification.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic04",
@@ -434,16 +454,36 @@
         "Topic04/waveforms/binaryUpDownCounter-waveform.png",
         "Topic04/synthesis/binaryUpDownCounter-rtl.png"
       ],
-      "note": "",
-      "synthesis_source_matches": false,
-      "waveform_source_matches": false,
-      "evidence_source_matches": false,
-      "evidence_status": "Synthesis provenance: historical source hashes differ from the current RTL or selected TB. Waveform provenance: historical source hashes differ from the current RTL or selected TB",
+      "note": "The saved testbench covers loading, both count directions and down-count rollover. Its four-bit literal 4'd22 truncates to 6. The final load stays asserted and holds decimal 12.",
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "evidence_source_matches": true,
+      "evidence_status": "The Quartus RTL and ModelSim RTL/testbench hashes match the published source.",
       "saved_synthesis": {
         "status": "PASS",
         "family": "Cyclone IV E",
-        "device": "EP4CE22F17C6"
-      }
+        "device": "EP4CE22F17C6",
+        "warnings_count": 0
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 880000,
+          "trace_comparisons_passed": 86,
+          "coverage": {
+            "reset_edges": 1,
+            "count_edges": 11,
+            "rollover_or_recovery": 1,
+            "load_edges": 31
+          },
+          "images": [
+            "Topic04/waveforms/binaryUpDownCounter-waveform.png"
+          ],
+          "vcd": "Topic04/waveforms/data/binaryUpDownCounter-verification.vcd",
+          "wlf": "Topic04/waveforms/data/binaryUpDownCounter-verification.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic04",
@@ -478,10 +518,39 @@
       ],
       "testbench": "Topic05/tb/asynchronousSinglePort_tb.v",
       "simulation_top": "asynchronousSinglePort_tb",
-      "images": [],
-      "note": "The saved TB has interface/declaration errors. It is preserved as a draft.",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/asynchronousSinglePort-waveform-direct.png",
+        "Topic05/synthesis/asynchronousSinglePort-rtl.png"
+      ],
+      "note": "The saved testbench fails to elaborate. The waveform uses direct ModelSim stimulus on the RTL's default eight entries of 16 bits. The exercise calls for 16 entries of 8 bits.",
+      "evidence_status": "Quartus used the published RTL. ModelSim drove the RTL ports directly because the saved testbench fails to elaborate.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 0
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "direct_rtl_stimulus",
+          "end_time_ps": 210000,
+          "trace_comparisons_passed": 22,
+          "coverage": {
+            "bus_release_samples": 6,
+            "written_addresses": 8,
+            "read_samples": 8
+          },
+          "images": [
+            "Topic05/waveforms/asynchronousSinglePort-waveform-direct.png"
+          ],
+          "vcd": "Topic05/waveforms/data/asynchronousSinglePort-direct.vcd",
+          "wlf": "Topic05/waveforms/data/asynchronousSinglePort-direct.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic05",
@@ -492,10 +561,39 @@
       ],
       "testbench": "Topic05/tb/dualPortRAM_tb.v",
       "simulation_top": "dualPortRAM_tb",
-      "images": [],
-      "note": "",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/dualPortRAM-waveform-original.png",
+        "Topic05/synthesis/dualPortRAM-rtl.png"
+      ],
+      "note": "The saved testbench resets the memory, then uses independent random write and read addresses. A read can therefore return the reset value of an unwritten address.",
+      "evidence_status": "The Quartus RTL and ModelSim RTL/testbench hashes match the published source.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 0
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 426000,
+          "trace_comparisons_passed": 94,
+          "coverage": {
+            "reset_samples": 1,
+            "writes": 10,
+            "reads": 30
+          },
+          "images": [
+            "Topic05/waveforms/dualPortRAM-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/dualPortRAM-original.vcd",
+          "wlf": "Topic05/waveforms/data/dualPortRAM-original.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic05",
@@ -506,10 +604,39 @@
       ],
       "testbench": "Topic05/tb/asynchronousDualPortRAM_tb.v",
       "simulation_top": "asynchronousDualPortRAM_tb",
-      "images": [],
-      "note": "",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/asynchronousDualPortRAM-waveform-original.png",
+        "Topic05/synthesis/asynchronousDualPortRAM-rtl.png"
+      ],
+      "note": "The saved testbench drives separate write and read clocks. The read port samples on its clock edge.",
+      "evidence_status": "The Quartus RTL and ModelSim RTL/testbench hashes match the published source.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 1
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 861000,
+          "trace_comparisons_passed": 106,
+          "coverage": {
+            "reset_samples": 5,
+            "writes": 11,
+            "reads": 15
+          },
+          "images": [
+            "Topic05/waveforms/asynchronousDualPortRAM-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/asynchronousDualPortRAM-original.vcd",
+          "wlf": "Topic05/waveforms/data/asynchronousDualPortRAM-original.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic05",
@@ -520,10 +647,35 @@
       ],
       "testbench": "Topic05/tb/clockBuffer_tb.v",
       "simulation_top": "clockBuffer_tb",
-      "images": [],
-      "note": "This TB has a free-running clock and no finish statement; use a bounded simulator run.",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/clockBuffer-waveform-original.png",
+        "Topic05/synthesis/clockBuffer-rtl.png"
+      ],
+      "note": "The testbench runs a free-running clock and has no finish statement. The captured window ends at 100 ns.",
+      "evidence_status": "The Quartus RTL and ModelSim RTL/testbench hashes match the published source.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 0
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 100000,
+          "trace_comparisons_passed": 11,
+          "coverage": {},
+          "images": [
+            "Topic05/waveforms/clockBuffer-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/clockBuffer-original.vcd",
+          "wlf": "Topic05/waveforms/data/clockBuffer-original.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic05",
@@ -532,12 +684,63 @@
       "rtl": [
         "Topic05/rtl/fifo16x8_m1.v"
       ],
-      "testbench": null,
+      "testbench": "Topic05/tb/fifo16x8_m1_tb.v",
       "simulation_top": "fifo16x8_m1_tb",
-      "images": [],
-      "note": "RTL draft only: there is no saved M1 testbench.",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/fifo16x8_m1-waveform-direct.png",
+        "Topic05/waveforms/fifo16x8_m1-boundaries-direct.png",
+        "Topic05/waveforms/fifo16x8_m1-reset-direct.png",
+        "Topic05/waveforms/fifo16x8_m1-waveform-original.png",
+        "Topic05/synthesis/fifo16x8_m1-rtl.png"
+      ],
+      "note": "This saved copy of the M2 testbench changes the two module identifiers for M1. It selects eight entries of 16 bits and holds the DUT in active-low reset during the transfer attempts. The direct ModelSim run exercises the default 16 entries of 8 bits.",
+      "evidence_status": "Quartus used the published RTL. ModelSim captured the saved testbench and a separate direct stimulus run on the default RTL.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 1
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "direct_rtl_stimulus",
+          "end_time_ps": 532000,
+          "trace_comparisons_passed": 870,
+          "coverage": {
+            "reset_samples": 5,
+            "blocked_reads": 3,
+            "accepted_writes": 27,
+            "blocked_writes": 2,
+            "accepted_reads": 23,
+            "simultaneous_transfers": 5
+          },
+          "images": [
+            "Topic05/waveforms/fifo16x8_m1-waveform-direct.png",
+            "Topic05/waveforms/fifo16x8_m1-boundaries-direct.png",
+            "Topic05/waveforms/fifo16x8_m1-reset-direct.png"
+          ],
+          "vcd": "Topic05/waveforms/data/fifo16x8_m1-direct.vcd",
+          "wlf": "Topic05/waveforms/data/fifo16x8_m1-direct.wlf"
+        },
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 2220000,
+          "trace_comparisons_passed": 1338,
+          "coverage": {
+            "reset_samples": 221
+          },
+          "images": [
+            "Topic05/waveforms/fifo16x8_m1-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/fifo16x8_m1-original.vcd",
+          "wlf": "Topic05/waveforms/data/fifo16x8_m1-original.wlf"
+        }
+      ]
     },
     {
       "folder": "Topic05",
@@ -548,10 +751,61 @@
       ],
       "testbench": "Topic05/tb/fifo16x8_m2_tb.v",
       "simulation_top": "fifo16x8_m2_tb",
-      "images": [],
-      "note": "The saved TB still uses the earlier width settings and active-high reset stimulus; the current RTL uses active-low rst_n. Compilation alone does not establish correct stimulus.",
-      "evidence_status": "No saved waveform or synthesis exports",
-      "evidence_source_matches": null
+      "images": [
+        "Topic05/waveforms/fifo16x8_m2-waveform-direct.png",
+        "Topic05/waveforms/fifo16x8_m2-boundaries-direct.png",
+        "Topic05/waveforms/fifo16x8_m2-reset-direct.png",
+        "Topic05/waveforms/fifo16x8_m2-waveform-original.png",
+        "Topic05/synthesis/fifo16x8_m2-rtl.png"
+      ],
+      "note": "The saved testbench selects eight entries of 16 bits and holds the DUT in active-low reset during the transfer attempts. The direct ModelSim run exercises the default 16 entries of 8 bits.",
+      "evidence_status": "Quartus used the published RTL. ModelSim captured the saved testbench and a separate direct stimulus run on the default RTL.",
+      "evidence_source_matches": true,
+      "synthesis_source_matches": true,
+      "waveform_source_matches": true,
+      "saved_synthesis": {
+        "status": "PASS",
+        "family": "Cyclone IV E",
+        "device": "EP4CE22F17C6",
+        "warnings_count": 1
+      },
+      "saved_waveforms": [
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "direct_rtl_stimulus",
+          "end_time_ps": 532000,
+          "trace_comparisons_passed": 725,
+          "coverage": {
+            "reset_samples": 5,
+            "blocked_reads": 3,
+            "accepted_writes": 27,
+            "blocked_writes": 2,
+            "accepted_reads": 23,
+            "simultaneous_transfers": 5
+          },
+          "images": [
+            "Topic05/waveforms/fifo16x8_m2-waveform-direct.png",
+            "Topic05/waveforms/fifo16x8_m2-boundaries-direct.png",
+            "Topic05/waveforms/fifo16x8_m2-reset-direct.png"
+          ],
+          "vcd": "Topic05/waveforms/data/fifo16x8_m2-direct.vcd",
+          "wlf": "Topic05/waveforms/data/fifo16x8_m2-direct.wlf"
+        },
+        {
+          "tool": "ModelSim Intel FPGA Starter Edition 2020.1",
+          "stimulus": "original_tb",
+          "end_time_ps": 2220000,
+          "trace_comparisons_passed": 1115,
+          "coverage": {
+            "reset_samples": 221
+          },
+          "images": [
+            "Topic05/waveforms/fifo16x8_m2-waveform-original.png"
+          ],
+          "vcd": "Topic05/waveforms/data/fifo16x8_m2-original.vcd",
+          "wlf": "Topic05/waveforms/data/fifo16x8_m2-original.wlf"
+        }
+      ]
     },
     {
       "folder": "ExtraPractice/CombinationalCircuits",

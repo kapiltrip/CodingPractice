@@ -263,9 +263,10 @@
       "id": "fifo16x8_m1",
       "simulation_top": "fifo16x8_m1_tb",
       "rtl_status": "PASS",
-      "testbench_status": "NO TB",
+      "testbench_status": "PASS",
       "source_sha256": {
-        "Topic05/rtl/fifo16x8_m1.v": "39263ccd8819407ec070b8137c1e27cb20d6c5cb7e7437fb2b0350b88df6690d"
+        "Topic05/rtl/fifo16x8_m1.v": "39263ccd8819407ec070b8137c1e27cb20d6c5cb7e7437fb2b0350b88df6690d",
+        "Topic05/tb/fifo16x8_m1_tb.v": "8625293e1d74919bd7a20ee530be204107540a9eaeba6b0cd0694966b9c6860b"
       }
     },
     {
