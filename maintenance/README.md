@@ -13,7 +13,7 @@ Keep the six course topics in `Topic01` through `Topic06`. Use `ExtraPractice/<a
 | Material | Location within a topic or practice collection |
 |---|---|
 | What to practise and links to individual designs | `README.md` |
-| One page with the code, results, and testbench iterations for a design | `examples/<design-id>.md` |
+| One page with the code, results, and testbench iterations for a design | `designs/<design-id>.md` |
 | Editable design and testbench source | `rtl/` and `tb/` |
 | Waveform images and selected editable traces | `waveforms/` and `waveforms/data/` |
 | Synthesized RTL schematics | `synthesis/` |

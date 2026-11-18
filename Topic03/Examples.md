@@ -6,8 +6,8 @@
 
 <a id="decoder3_8"></a>
 
-- [3-to-8 decoder](examples/decoder3_8.md)
+- [3-to-8 decoder](designs/decoder3_8.md)
 
 <a id="priorityenc"></a>
 
-- [8-to-3 priority encoder](examples/priorityEnc.md)
+- [8-to-3 priority encoder](designs/priorityEnc.md)

@@ -4,7 +4,7 @@ Before starting work in this repository, read `AboutThisRepo.txt` at the reposit
 
 This is Kapil's public Verilog practice repository. The private course workspace is the source of context, not a collection to mirror wholesale.
 
-- Keep the existing Topic01–Topic06 numbering and the separate extra-practice collection. Follow `maintenance/README.md` when adding work. Link a design from its topic README to `examples/<design-id>.md` and show any alternate testbenches on that design page.
+- Keep the existing Topic01–Topic06 numbering and the separate extra-practice collection. Follow `maintenance/README.md` when adding work. Link a design from its topic README to `designs/<design-id>.md` and show any alternate testbenches on that design page.
 - Preserve Kapil's RTL/TB bytes during copying and organization. Report unfinished drafts or errors without silently replacing his code.
 - Exclude official Maven templates, supplied solutions, instructor reference code, paid manual/lecture images, private records, and private Git history. Consult maintenance/EXCLUDED.md before importing more files.
 - Keep source, selected matching TB, waveform, and synthesis evidence together. Record source hashes and label older exports when the current source differs. Never invent simulation/synthesis results.

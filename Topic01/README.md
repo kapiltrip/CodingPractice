@@ -12,16 +12,16 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 
 | Subtopic | RTL check | Selected TB check | Saved evidence |
 |---|---|---|---|
-| [Bidirectional buffer](examples/bidirectionalBuffer.md) | PASS | PASS | Historical; see notes |
-| [2-to-4 dataflow decoder](examples/decoderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [Dataflow full adder](examples/fullAdderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [Full adder using half adders](examples/fullAdderUsingHalfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [Half adder](examples/halfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [4-to-1 mux using 2-to-1 muxes](examples/mux4to1.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [4-to-1 mux using a decoder](examples/muxUsingdecoder.md) | PASS | PASS | Historical; see notes |
-| [Priority encoder](examples/priorityEncoder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
-| [4-bit ripple-carry adder](examples/rippleCarryAdder.md) | PASS | PASS | Historical; see notes |
-| [Gate-level ripple-carry adder](examples/rippleCarryAdderStruct.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [Bidirectional buffer](designs/bidirectionalBuffer.md) | PASS | PASS | Historical; see notes |
+| [2-to-4 dataflow decoder](designs/decoderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [Dataflow full adder](designs/fullAdderDataflow.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [Full adder using half adders](designs/fullAdderUsingHalfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [Half adder](designs/halfAdder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [4-to-1 mux using 2-to-1 muxes](designs/mux4to1.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [4-to-1 mux using a decoder](designs/muxUsingdecoder.md) | PASS | PASS | Historical; see notes |
+| [Priority encoder](designs/priorityEncoder.md) | PASS | PASS | Synthesis matches; waveform source unverified |
+| [4-bit ripple-carry adder](designs/rippleCarryAdder.md) | PASS | PASS | Historical; see notes |
+| [Gate-level ripple-carry adder](designs/rippleCarryAdderStruct.md) | PASS | PASS | Synthesis matches; waveform source unverified |
 
 All HDL files preserve their original bytes. The checks above compile/elaborate the saved files; they do not establish functional correctness.
 
