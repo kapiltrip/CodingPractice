@@ -6,6 +6,7 @@
     {
       "folder": "Topic01",
       "id": "bidirectionalBuffer",
+      "rtl_top": "bidirectionalBuffer",
       "simulation_top": "bidirectionalBuffer_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -17,6 +18,7 @@
     {
       "folder": "Topic01",
       "id": "decoderDataflow",
+      "rtl_top": "decoderDataflow",
       "simulation_top": "decoderDataflow_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -28,6 +30,7 @@
     {
       "folder": "Topic01",
       "id": "fullAdderDataflow",
+      "rtl_top": "fullAdderDataflow",
       "simulation_top": "fullAdderDataflow_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -39,6 +42,7 @@
     {
       "folder": "Topic01",
       "id": "fullAdderUsingHalfAdder",
+      "rtl_top": "fullAdderUsingHalfAdder",
       "simulation_top": "fullAdderUsingHalfAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -50,6 +54,7 @@
     {
       "folder": "Topic01",
       "id": "halfAdder",
+      "rtl_top": "halfAdder",
       "simulation_top": "halfAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -61,6 +66,7 @@
     {
       "folder": "Topic01",
       "id": "mux4to1",
+      "rtl_top": "mux4to1",
       "simulation_top": "mux4to1_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -72,6 +78,7 @@
     {
       "folder": "Topic01",
       "id": "muxUsingdecoder",
+      "rtl_top": "muxUsingdecoder",
       "simulation_top": "muxUsingdecoder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -83,6 +90,7 @@
     {
       "folder": "Topic01",
       "id": "priorityEncoder",
+      "rtl_top": "priorityEncoder",
       "simulation_top": "priorityEncoder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -94,6 +102,7 @@
     {
       "folder": "Topic01",
       "id": "rippleCarryAdder",
+      "rtl_top": "rippleCarryAdder",
       "simulation_top": "rippleCarryAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -105,6 +114,7 @@
     {
       "folder": "Topic01",
       "id": "rippleCarryAdderStruct",
+      "rtl_top": "rippleCarryAdderStruct",
       "simulation_top": "rippleCarryAdderStruct_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -116,6 +126,7 @@
     {
       "folder": "Topic03",
       "id": "decoder3_8",
+      "rtl_top": "decoder3_8",
       "simulation_top": "decoder3_8_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -127,6 +138,7 @@
     {
       "folder": "Topic03",
       "id": "priorityEnc",
+      "rtl_top": "priorityEnc",
       "simulation_top": "priorityEnc_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -138,6 +150,7 @@
     {
       "folder": "Topic04",
       "id": "srLatch",
+      "rtl_top": "srLatch",
       "simulation_top": "srLatch_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -149,6 +162,7 @@
     {
       "folder": "Topic04",
       "id": "jkFilpFlopParameter",
+      "rtl_top": "jkFilpFlopParameter",
       "simulation_top": "jkFilpFlopParameter_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -160,6 +174,7 @@
     {
       "folder": "Topic04",
       "id": "tffUsingDff",
+      "rtl_top": "tffUsingDff",
       "simulation_top": "tffUsingDff_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -171,6 +186,7 @@
     {
       "folder": "Topic04",
       "id": "loadableUpCounter",
+      "rtl_top": "loadableUpCounter",
       "simulation_top": "loadableUpCounter_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -182,6 +198,7 @@
     {
       "folder": "Topic04",
       "id": "mod12UpCounter",
+      "rtl_top": "mod12UpCounter",
       "simulation_top": "mod12UpCounter_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -193,6 +210,7 @@
     {
       "folder": "Topic04",
       "id": "binaryUpDownCounter",
+      "rtl_top": "binaryUpDownCounter",
       "simulation_top": "binaryUpDownCounter_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -205,6 +223,7 @@
     {
       "folder": "Topic04",
       "id": "siso4bits",
+      "rtl_top": "siso4bits",
       "simulation_top": "siso4bits_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -216,6 +235,7 @@
     {
       "folder": "Topic05",
       "id": "asynchronousSinglePort",
+      "rtl_top": "asynchronousSinglePort",
       "simulation_top": "asynchronousSinglePort_tb",
       "rtl_status": "PASS",
       "testbench_status": "FAIL",
@@ -228,6 +248,7 @@
     {
       "folder": "Topic05",
       "id": "dualPortRAM",
+      "rtl_top": "dualPortRAM",
       "simulation_top": "dualPortRAM_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -239,6 +260,7 @@
     {
       "folder": "Topic05",
       "id": "asynchronousDualPortRAM",
+      "rtl_top": "asynchronousDualPortRAM",
       "simulation_top": "asynchronousDualPortRAM_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -250,6 +272,7 @@
     {
       "folder": "Topic05",
       "id": "clockBuffer",
+      "rtl_top": "clockBuffer",
       "simulation_top": "clockBuffer_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -261,6 +284,7 @@
     {
       "folder": "Topic05",
       "id": "fifo16x8_m1",
+      "rtl_top": "fifo16x8_m1",
       "simulation_top": "fifo16x8_m1_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -272,6 +296,7 @@
     {
       "folder": "Topic05",
       "id": "fifo16x8_m2",
+      "rtl_top": "fifo16x8_m2",
       "simulation_top": "fifo16x8_m2_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -283,6 +308,7 @@
     {
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "halfSubDataflow",
+      "rtl_top": "halfSubDataflow",
       "simulation_top": "halfSubDataflow_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -294,6 +320,7 @@
     {
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "fullSubUsingHalf",
+      "rtl_top": "fullSubUsingHalf",
       "simulation_top": "fullSubUsingHalf_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -305,6 +332,7 @@
     {
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "mux4to1",
+      "rtl_top": "mux4to1",
       "simulation_top": "mux4to1_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -316,6 +344,7 @@
     {
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "decoder2to4",
+      "rtl_top": "decoder2to4",
       "simulation_top": "decoder2to4_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",
@@ -327,6 +356,7 @@
     {
       "folder": "Topic01",
       "id": "full-adder-alternate-tb",
+      "rtl_top": "fullAdderUsingHalfAdder",
       "simulation_top": "fullAdderUsingHalfAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "FAIL",
@@ -339,6 +369,7 @@
     {
       "folder": "Topic01",
       "id": "half-adder-alternate-tb",
+      "rtl_top": "halfAdder",
       "simulation_top": "halfAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "FAIL",
@@ -351,6 +382,7 @@
     {
       "folder": "Topic01",
       "id": "structural-adder-alternate-tb",
+      "rtl_top": "rippleCarryAdderStruct",
       "simulation_top": "rippleCarryAdder_tb",
       "rtl_status": "PASS",
       "testbench_status": "PASS",

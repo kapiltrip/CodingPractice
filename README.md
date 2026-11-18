@@ -1,6 +1,6 @@
 # Coding Practice
 
-My Verilog coding practice, maintained daily with help from Codex/AI. I write the RTL and testbenches; Codex helps organize the repository and maintain the documentation and saved results.
+I write the Verilog RTL and testbenches. Codex helps organize the repository, document the examples, and maintain the saved results.
 
 This is the public companion to my private [Verilog Maven Silicon workspace](https://github.com/kapiltrip/Verilog-Maven-Silicon). **Topic 1–6 correspond to Lab 1–6** in the course.
 
@@ -15,10 +15,10 @@ This is the public companion to my private [Verilog Maven Silicon workspace](htt
 | [5. Memory logic](Topic05/README.md) | Single/dual-port RAMs; bus ownership; SISO shift register; clock buffer; FIFO with full/empty flags | Six RAM, clock buffer and FIFO designs with waveforms and schematics |
 | [6. FSM design](Topic06/README.md) | Overlapping `101` Moore detector; coin-operated vending controller; state and output logic | Topic brief; student code pending |
 
-Open a topic for its subtopics, editable code, testbenches and available waveform/synthesis images. The examples pages keep the saved code and results together and identify older exports where the code has changed.
+Open a topic and choose a design. Each design page keeps the editable RTL and testbenches next to the available waveforms and synthesis schematics.
 
 [Extra combinational practice](ExtraPractice/CombinationalCircuits/README.md) contains the separate subtractor, mux and decoder exercises.
 
 ## Maintenance
 
-[Excluded instructor examples, source checks and import notes](maintenance/README.md). The proposed testbench levels and revision tracker remain ideas for later discussion.
+[How to add a design, check the code, and save new results](maintenance/README.md).

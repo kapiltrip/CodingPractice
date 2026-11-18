@@ -4,6 +4,7 @@
       "folder": "Topic01",
       "id": "bidirectionalBuffer",
       "title": "Bidirectional buffer",
+      "rtl_top": "bidirectionalBuffer",
       "rtl": [
         "Topic01/rtl/bidirectionalBuffer.v"
       ],
@@ -29,6 +30,7 @@
       "folder": "Topic01",
       "id": "decoderDataflow",
       "title": "2-to-4 dataflow decoder",
+      "rtl_top": "decoderDataflow",
       "rtl": [
         "Topic01/rtl/decoderDataflow.v"
       ],
@@ -54,6 +56,7 @@
       "folder": "Topic01",
       "id": "fullAdderDataflow",
       "title": "Dataflow full adder",
+      "rtl_top": "fullAdderDataflow",
       "rtl": [
         "Topic01/rtl/fullAdderDataflow.v"
       ],
@@ -79,6 +82,7 @@
       "folder": "Topic01",
       "id": "fullAdderUsingHalfAdder",
       "title": "Full adder using half adders",
+      "rtl_top": "fullAdderUsingHalfAdder",
       "rtl": [
         "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v"
       ],
@@ -104,6 +108,7 @@
       "folder": "Topic01",
       "id": "halfAdder",
       "title": "Half adder",
+      "rtl_top": "halfAdder",
       "rtl": [
         "Topic01/rtl/rtlExtra/halfAdder.v"
       ],
@@ -129,6 +134,7 @@
       "folder": "Topic01",
       "id": "mux4to1",
       "title": "4-to-1 mux using 2-to-1 muxes",
+      "rtl_top": "mux4to1",
       "rtl": [
         "Topic01/rtl/mux4to1.v"
       ],
@@ -154,6 +160,7 @@
       "folder": "Topic01",
       "id": "muxUsingdecoder",
       "title": "4-to-1 mux using a decoder",
+      "rtl_top": "muxUsingdecoder",
       "rtl": [
         "Topic01/rtl/muxUsingDecoder.v"
       ],
@@ -179,6 +186,7 @@
       "folder": "Topic01",
       "id": "priorityEncoder",
       "title": "Priority encoder",
+      "rtl_top": "priorityEncoder",
       "rtl": [
         "Topic01/rtl/rtlExtra/priorityEncoder.v"
       ],
@@ -204,6 +212,7 @@
       "folder": "Topic01",
       "id": "rippleCarryAdder",
       "title": "4-bit ripple-carry adder",
+      "rtl_top": "rippleCarryAdder",
       "rtl": [
         "Topic01/rtl/rippleCarryAdder.v"
       ],
@@ -228,6 +237,7 @@
       "folder": "Topic01",
       "id": "rippleCarryAdderStruct",
       "title": "Gate-level ripple-carry adder",
+      "rtl_top": "rippleCarryAdderStruct",
       "rtl": [
         "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v"
       ],
@@ -253,6 +263,7 @@
       "folder": "Topic03",
       "id": "decoder3_8",
       "title": "3-to-8 decoder",
+      "rtl_top": "decoder3_8",
       "rtl": [
         "Topic03/rtl/decoder3_8.v"
       ],
@@ -278,6 +289,7 @@
       "folder": "Topic03",
       "id": "priorityEnc",
       "title": "8-to-3 priority encoder",
+      "rtl_top": "priorityEnc",
       "rtl": [
         "Topic03/rtl/encoderPriority.v"
       ],
@@ -303,6 +315,7 @@
       "folder": "Topic04",
       "id": "srLatch",
       "title": "Gate-level SR latch",
+      "rtl_top": "srLatch",
       "rtl": [
         "Topic04/rtl/latchSR.v"
       ],
@@ -327,6 +340,7 @@
       "folder": "Topic04",
       "id": "jkFilpFlopParameter",
       "title": "JK flip-flop with named operations",
+      "rtl_top": "jkFilpFlopParameter",
       "rtl": [
         "Topic04/rtl/jkFlipFlopParameter.v"
       ],
@@ -351,6 +365,7 @@
       "folder": "Topic04",
       "id": "tffUsingDff",
       "title": "T flip-flop using a D flip-flop",
+      "rtl_top": "tffUsingDff",
       "rtl": [
         "Topic04/rtl/tUsingDff.v"
       ],
@@ -375,6 +390,7 @@
       "folder": "Topic04",
       "id": "loadableUpCounter",
       "title": "Loadable binary up counter",
+      "rtl_top": "loadableUpCounter",
       "rtl": [
         "Topic04/rtl/loadableUpCounter.v"
       ],
@@ -419,6 +435,7 @@
       "folder": "Topic04",
       "id": "mod12UpCounter",
       "title": "Loadable MOD-12 up counter",
+      "rtl_top": "mod12UpCounter",
       "rtl": [
         "Topic04/rtl/mod12UpCounter.v"
       ],
@@ -445,6 +462,7 @@
       "folder": "Topic04",
       "id": "binaryUpDownCounter",
       "title": "Loadable binary up-down counter",
+      "rtl_top": "binaryUpDownCounter",
       "rtl": [
         "Topic04/rtl/binaryUpDownCounter.v"
       ],
@@ -489,6 +507,7 @@
       "folder": "Topic04",
       "id": "siso4bits",
       "title": "Four-bit SISO right-shift register",
+      "rtl_top": "siso4bits",
       "rtl": [
         "Topic04/rtl/siso.v"
       ],
@@ -513,6 +532,7 @@
       "folder": "Topic05",
       "id": "asynchronousSinglePort",
       "title": "Parameterized asynchronous single-port RAM",
+      "rtl_top": "asynchronousSinglePort",
       "rtl": [
         "Topic05/rtl/asynchronousSinglePort.v"
       ],
@@ -556,6 +576,7 @@
       "folder": "Topic05",
       "id": "dualPortRAM",
       "title": "Synchronous dual-port RAM",
+      "rtl_top": "dualPortRAM",
       "rtl": [
         "Topic05/rtl/dualPortRam.v"
       ],
@@ -599,6 +620,7 @@
       "folder": "Topic05",
       "id": "asynchronousDualPortRAM",
       "title": "Dual-clock RAM",
+      "rtl_top": "asynchronousDualPortRAM",
       "rtl": [
         "Topic05/rtl/asynchronousDualPortRAM.v"
       ],
@@ -642,6 +664,7 @@
       "folder": "Topic05",
       "id": "clockBuffer",
       "title": "Clock buffer",
+      "rtl_top": "clockBuffer",
       "rtl": [
         "Topic05/rtl/clockBuffer.v"
       ],
@@ -681,6 +704,7 @@
       "folder": "Topic05",
       "id": "fifo16x8_m1",
       "title": "FIFO using an occupancy counter",
+      "rtl_top": "fifo16x8_m1",
       "rtl": [
         "Topic05/rtl/fifo16x8_m1.v"
       ],
@@ -746,6 +770,7 @@
       "folder": "Topic05",
       "id": "fifo16x8_m2",
       "title": "FIFO using extended pointers",
+      "rtl_top": "fifo16x8_m2",
       "rtl": [
         "Topic05/rtl/fifo16x8_m2.v"
       ],
@@ -811,6 +836,7 @@
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "halfSubDataflow",
       "title": "Dataflow half subtractor",
+      "rtl_top": "halfSubDataflow",
       "rtl": [
         "ExtraPractice/CombinationalCircuits/rtl/halfSubDataflow.v"
       ],
@@ -834,6 +860,7 @@
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "fullSubUsingHalf",
       "title": "Full subtractor using half subtractors",
+      "rtl_top": "fullSubUsingHalf",
       "rtl": [
         "ExtraPractice/CombinationalCircuits/rtl/fullSubUsingHalf.v"
       ],
@@ -858,6 +885,7 @@
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "mux4to1",
       "title": "2-to-1 and hierarchical 4-to-1 muxes",
+      "rtl_top": "mux4to1",
       "rtl": [
         "ExtraPractice/CombinationalCircuits/rtl/muxQ3andQ4.v"
       ],
@@ -883,6 +911,7 @@
       "folder": "ExtraPractice/CombinationalCircuits",
       "id": "decoder2to4",
       "title": "2-to-4 dataflow decoder",
+      "rtl_top": "decoder2to4",
       "rtl": [
         "ExtraPractice/CombinationalCircuits/rtl/decoderDataflow.v"
       ],
@@ -907,6 +936,7 @@
     {
       "folder": "Topic01",
       "id": "full-adder-alternate-tb",
+      "rtl_top": "fullAdderUsingHalfAdder",
       "rtl": [
         "Topic01/rtl/rtlExtra/fullAdderUsingHalfAdder.v"
       ],
@@ -916,6 +946,7 @@
     {
       "folder": "Topic01",
       "id": "half-adder-alternate-tb",
+      "rtl_top": "halfAdder",
       "rtl": [
         "Topic01/rtl/rtlExtra/halfAdder.v"
       ],
@@ -925,6 +956,7 @@
     {
       "folder": "Topic01",
       "id": "structural-adder-alternate-tb",
+      "rtl_top": "rippleCarryAdderStruct",
       "rtl": [
         "Topic01/rtl/rtlExtra/rippleCarryAdderStruct.v"
       ],

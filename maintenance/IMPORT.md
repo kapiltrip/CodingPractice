@@ -8,7 +8,7 @@ The initial import on 2026-11-17 came from the local working tree of the private
 
 The HDL, waveform images and selected native traces are byte-for-byte copies. [The manifest](records/import-manifest.json) records the original relative path, public path, kind and SHA-256 hash. For schematic PNGs rendered from a Quartus PDF, it also records the source PDF hash and render bounds.
 
-The examples pages show a selected RTL/TB pairing with its original exports. Original capitalization and spelling differences between filenames and module tops are retained. For example, `encoderPriority.v` declares `priorityEnc`, and `jkFlipFlopParameter.v` declares `jkFilpFlopParameter`. Compile each selected design separately because names such as `mux4to1` and `decoderDataflow_tb` recur in different collections.
+Each design page shows a selected RTL/TB pairing with its original exports. Original capitalization and spelling differences between filenames and module tops are retained. For example, `encoderPriority.v` declares `priorityEnc`, and `jkFlipFlopParameter.v` declares `jkFilpFlopParameter`. Compile each selected design separately because names such as `mux4to1` and `decoderDataflow_tb` recur in different collections.
 
 The 17 November 2026 saved run supplied updated waveforms and schematics for the loadable counters in [Topic 4](../Topic04/README.md) and all six designs in [Topic 5](../Topic05/README.md). The waveform and trace hashes match the saved run. The schematic renders omit blank PDF margins and preserve the circuit pixels. The [design records](records/designs.json) include the native trace paths and captured comparison counts. For a direct port stimulus run, waveform source matching refers to the RTL whose ports ModelSim drove. For a testbench run, it covers both the RTL and testbench.
 
@@ -27,8 +27,4 @@ Their affected exports remain useful as historical records, but are not represen
 
 Topic 6 contains the course brief. The generate-loop adder in Topic 1 has a saved waveform with unconfirmed source hashes. Its older synthesis run failed, and the current source has no matching schematic.
 
-## Maintenance
-
-Kapil writes the practice RTL and testbenches. Codex assists with topic indexing, code/evidence organization, provenance, and normal Git maintenance. Add new evidence only after running the matching current source, retain earlier iterations when useful, and keep restricted course examples and private study material out of this public repository.
-
-The instruction file's suggested multi-level TB organization and random revision tracker remain unimplemented pending a separate discussion. No daily automation has been configured.
+Follow the [maintenance workflow](README.md#adding-or-updating-a-design) when adding practice code or saving evidence.

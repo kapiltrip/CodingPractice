@@ -12,7 +12,7 @@ Course context: Maven Silicon, [Verilog lab manual - ModelSim and Quartus](https
 
 | Subtopic | RTL check | Selected TB check | Saved evidence |
 |---|---|---|---|
-| [3-to-8 decoder](Examples.md#decoder3_8) | PASS | PASS | Source hashes match |
-| [8-to-3 priority encoder](Examples.md#priorityenc) | PASS | PASS | Source hashes match |
+| [3-to-8 decoder](examples/decoder3_8.md) | PASS | PASS | Source hashes match |
+| [8-to-3 priority encoder](examples/priorityEnc.md) | PASS | PASS | Source hashes match |
 
-[Open the code, testbenches, waveform images and synthesis schematics](Examples.md). All HDL files preserve their original bytes. The checks above compile/elaborate the saved files; they do not establish functional correctness.
+All HDL files preserve their original bytes. The checks above compile/elaborate the saved files; they do not establish functional correctness.
